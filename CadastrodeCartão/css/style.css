@@ -82,126 +82,104 @@ body {
     text-decoration: none;
 }
 
-/*QUEM SOMOS*/
-.comofunciona {
+/*cadastro do cartão*/
+.cadastrocartao {
     margin-left: 690px;
     margin-top: 30px;
 }
 
-.comofuncionah1 {
+.cadastrocartaoh1 {
+    font-family: "Source Sans 3", sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
+    color: black;
     margin-top: -45px;
     margin-left: 30px;
 }
 
-/*TEXTO COMO FUNCIONA*/
-.textocomofunciona {
+/*QUADRO ROSA*/
+.quadrorosa {
     font-family: "Source Sans 3", sans-serif;
     font-family: "Source Sans Pro", sans-serif;
-    background-color: #f0ffff;
-    border-color: #70cbcb;
-    width: 80%;
-    margin-right: 10%;
-    margin-left: 10%;
-    border-color: 2px solid #70cbcb;
-    border-radius: 10px;
+    background-color: #ec7474;
+    border-radius: 5px;
+    margin-left: 80px;
+    margin-top: 150px;
+    width: 728px;
+    height: 332px;
 }
 
-.fotoum {
-    width: 150px;
-    height: 100px;
-    margin-top: 40px;
-    margin-left: 210px;
-}
-
-.cadastro {
-    margin-left: 330px;
-    margin-top: -60px;
-}
-
-.fotodois {
-    width: 150px;
-    height: 100px;
-    margin-top: 40px;
-    margin-left: 210px;
-}
-
-.plano {
-    margin-left: 330px;
-    margin-top: -60px;
-}
-
-.fototres {
-    width: 150px;
-    height: 100px;
-    margin-top: 40px;
-    margin-left: 210px;
-}
-
-.calendario {
-    margin-left: 330px;
-    margin-top: -60px;
-}
-
-/*DO QUE PRECISO*/
-.doquepreciso {
-    margin-left: 1px;
-    margin-top: 30px;
-}
-
-.doqueprecisoh1 {
-    margin-top: -45px;
-    margin-left: 390px;
-}
-
-/*texto do que preciso*/
-.textodoquepreciso {
+.nome1 {
     font-family: "Source Sans 3", sans-serif;
     font-family: "Source Sans Pro", sans-serif;
-    background-color: #f0ffff;
-    border-color: #70cbcb;
-    width: 80%;
-    height: 300px;
-    margin-right: 10%;
-    margin-left: 10%;
-    border-radius: 10px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 100px;
+    margin-top: -320px;
 }
 
-.fotoquatro {
-    width: 150px;
-    height: 100px;
-    margin-top: 40px;
-    margin-left: 210px;
+.numero {
+    font-family: "Source Sans 3", sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 100px;
+    margin-top: 70px;
 }
 
-.documento {
-    margin-left: 330px;
-    margin-top: -60px;
+.nome2 {
+    font-family: "Source Sans 3", sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 100px;
+    margin-top: 60px;
 }
 
-.fotocinco {
-    width: 150px;
-    height: 100px;
-    margin-top: 40px;
-    margin-left: 210px;
+.validade {
+    font-family: "Source Sans 3", sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 600px;
+    margin-top: -285px;
 }
 
-.residencia {
-    margin-left: 330px;
-    margin-top: -60px;
+.seguranca {
+    font-family: "Source Sans 3", sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 600px;
+    margin-top: 65px;
 }
 
-.fotoseis {
-    width: 150px;
-    height: 100px;
-    margin-top: 40px;
-    margin-left: 210px;
+/*BOTÃO SALVAR*/
+.botaosalvar {
+    font-family: "Source Sans 3", sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+    margin-left: 380px;
+    margin-top: 180px;
+    cursor: pointer;
+    background-color: #70cbcb;
+    width: 90px;
+    height: 40px;
+    border-radius: 5px;
 }
 
-.checagem {
-    margin-left: 330px;
-    margin-top: -60px;
+.imagemcartao {
+    margin-top: -20px;
+    margin-left: 800px;
 }
 
+/*IMAGEM PREDIOS*/
 .predio {
     margin-top: 110px;
     margin-left: 170px;

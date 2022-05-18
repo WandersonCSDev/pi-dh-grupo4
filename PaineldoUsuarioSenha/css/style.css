@@ -82,126 +82,132 @@ body {
     text-decoration: none;
 }
 
-/*QUEM SOMOS*/
-.comofunciona {
+/*painel do usuario*/
+.paineldousuario {
     margin-left: 690px;
     margin-top: 30px;
 }
 
-.comofuncionah1 {
+.paineldousuarioh1 {
+    font-family: "Source Sans 3", sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
+    color: black;
     margin-top: -45px;
     margin-left: 30px;
 }
 
-/*TEXTO COMO FUNCIONA*/
-.textocomofunciona {
-    font-family: "Source Sans 3", sans-serif;
-    font-family: "Source Sans Pro", sans-serif;
-    background-color: #f0ffff;
-    border-color: #70cbcb;
-    width: 80%;
-    margin-right: 10%;
-    margin-left: 10%;
-    border-color: 2px solid #70cbcb;
-    border-radius: 10px;
-}
-
-.fotoum {
-    width: 150px;
-    height: 100px;
-    margin-top: 40px;
-    margin-left: 210px;
-}
-
-.cadastro {
-    margin-left: 330px;
-    margin-top: -60px;
-}
-
-.fotodois {
-    width: 150px;
-    height: 100px;
-    margin-top: 40px;
-    margin-left: 210px;
-}
-
-.plano {
-    margin-left: 330px;
-    margin-top: -60px;
-}
-
-.fototres {
-    width: 150px;
-    height: 100px;
-    margin-top: 40px;
-    margin-left: 210px;
-}
-
-.calendario {
-    margin-left: 330px;
-    margin-top: -60px;
-}
-
-/*DO QUE PRECISO*/
-.doquepreciso {
-    margin-left: 1px;
+.avatar {
+    margin-left: 20px;
     margin-top: 30px;
 }
 
-.doqueprecisoh1 {
-    margin-top: -45px;
-    margin-left: 390px;
-}
-
-/*texto do que preciso*/
-.textodoquepreciso {
+.alterarfoto {
     font-family: "Source Sans 3", sans-serif;
     font-family: "Source Sans Pro", sans-serif;
-    background-color: #f0ffff;
-    border-color: #70cbcb;
-    width: 80%;
-    height: 300px;
-    margin-right: 10%;
-    margin-left: 10%;
-    border-radius: 10px;
+    color: black;
+    margin-left: 70px;
+    margin-top: 0px;
 }
 
-.fotoquatro {
+/*BOTÕES*/
+.botaomeuspedidos {
+    font-family: "Source Sans 3", sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
+    color: black;
+    margin-top: 80px;
+    margin-left: 30px;
     width: 150px;
-    height: 100px;
-    margin-top: 40px;
-    margin-left: 210px;
+    height: 32px;
+    background-color: #70cbcb;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
-.documento {
-    margin-left: 330px;
-    margin-top: -60px;
+.botaomodificarsenha {
+    font-family: "Source Sans 3", sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
+    color: black;
+    margin-top: 80px;
+    margin-left: 30px;
+    width: 180px;
+    height: 32px;
+    background-color: #70cbcb;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
-.fotocinco {
-    width: 150px;
-    height: 100px;
-    margin-top: 40px;
-    margin-left: 210px;
+.botaoenderecocadastral {
+    font-family: "Source Sans 3", sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
+    color: black;
+    margin-top: 80px;
+    margin-left: 30px;
+    width: 210px;
+    height: 32px;
+    background-color: #70cbcb;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
-.residencia {
-    margin-left: 330px;
-    margin-top: -60px;
+/*QUADRO ROSA*/
+.quadrorosa {
+    font-family: "Source Sans 3", sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
+    background-color: #ec7474;
+    border-radius: 5px;
+    margin-left: 440px;
+    margin-top: -290px;
+    width: 628px;
+    height: 332px;
 }
 
-.fotoseis {
-    width: 150px;
-    height: 100px;
-    margin-top: 40px;
-    margin-left: 210px;
+.senha {
+    font-family: "Source Sans 3", sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 460px;
+    margin-top: -320px;
 }
 
-.checagem {
-    margin-left: 330px;
-    margin-top: -60px;
+.novasenha {
+    font-family: "Source Sans 3", sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 460px;
+    margin-top: 70px;
 }
 
+.confirmar {
+    font-family: "Source Sans 3", sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 460px;
+    margin-top: 60px;
+}
+
+/*BOTÃO SALVAR*/
+.botaosalvar {
+    font-family: "Source Sans 3", sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+    margin-left: 710px;
+    margin-top: 130px;
+    cursor: pointer;
+    background-color: #70cbcb;
+    width: 90px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+/*IMAGEM PREDIOS*/
 .predio {
     margin-top: 110px;
     margin-left: 170px;

@@ -82,85 +82,163 @@ body {
     text-decoration: none;
 }
 
-/*QUEM SOMOS*/
-.quemsomos {
+/*painel do usuario*/
+.paineldousuario {
     margin-left: 690px;
     margin-top: 30px;
 }
 
-.quemsomosh1 {
-    margin-top: -45px;
-    margin-left: 10px;
-}
-
-/*TEXTO QUEM SOMOS*/
-.textoquemsomos {
+.paineldousuarioh1 {
     font-family: "Source Sans 3", sans-serif;
     font-family: "Source Sans Pro", sans-serif;
+    color: black;
+    margin-top: -45px;
+    margin-left: 30px;
 }
 
-.textoum {
-    width: 972px;
-    height: 90px;
-    margin-top: 40px;
-    margin-left: 180px;
-    background-color: #f0ffff;
-    border: 2px solid #70cbcb;
-}
-
-/*Missão*/
-.missao {
+.avatar {
+    margin-left: 20px;
     margin-top: 30px;
 }
 
-.missaoh1 {
-    margin-top: -45px;
-    margin-left: 550px;
-}
-
-/*TEXTO MISSÃO*/
-.textomissao {
+.alterarfoto {
     font-family: "Source Sans 3", sans-serif;
     font-family: "Source Sans Pro", sans-serif;
+    color: black;
+    margin-left: 70px;
+    margin-top: 0px;
 }
 
-.textodois {
-    width: 972px;
-    height: 25px;
-    margin-top: 40px;
-    margin-left: 180px;
-    background-color: #f0ffff;
-    border: 2px solid #70cbcb;
-}
-
-/*Valores*/
-.valores {
-    margin-left: 690px;
-    margin-top: 30px;
-}
-
-.valoresh1 {
-    margin-top: -45px;
-    margin-left: 10px;
-}
-
-/*TEXTO VALORES*/
-.textovalores {
+/*BOTÕES*/
+.botaomeuspedidos {
     font-family: "Source Sans 3", sans-serif;
     font-family: "Source Sans Pro", sans-serif;
+    color: black;
+    margin-top: 80px;
+    margin-left: 30px;
+    width: 150px;
+    height: 32px;
+    background-color: #70cbcb;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
-.textotres {
-    width: 972px;
-    height: 60px;
-    margin-top: 40px;
-    margin-left: 180px;
-    background-color: #f0ffff;
-    border: 2px solid #70cbcb;
+.botaomodificarsenha {
+    font-family: "Source Sans 3", sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
+    color: black;
+    margin-top: 80px;
+    margin-left: 30px;
+    width: 180px;
+    height: 32px;
+    background-color: #70cbcb;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
-/*imagem predio*/
-.imagempredio {
+.botaoenderecocadastral {
+    font-family: "Source Sans 3", sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
+    color: black;
+    margin-top: 80px;
+    margin-left: 30px;
+    width: 210px;
+    height: 32px;
+    background-color: #70cbcb;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/*QUADRO ROSA*/
+.quadrorosa {
+    font-family: "Source Sans 3", sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
+    background-color: #ec7474;
+    border-radius: 5px;
+    margin-left: 400px;
+    margin-top: -290px;
+    width: 728px;
+    height: 332px;
+}
+
+.rua {
+    font-family: "Source Sans 3", sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 410px;
+    margin-top: -320px;
+}
+
+.cep {
+    font-family: "Source Sans 3", sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 410px;
+    margin-top: 70px;
+}
+
+.cidade {
+    font-family: "Source Sans 3", sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 410px;
+    margin-top: 60px;
+}
+
+.numero {
+    font-family: "Source Sans 3", sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 910px;
+    margin-top: -285px;
+}
+
+.bairro {
+    font-family: "Source Sans 3", sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 910px;
+    margin-top: 65px;
+}
+
+.uf {
+    font-family: "Source Sans 3", sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 910px;
+    margin-top: 80px;
+}
+
+/*BOTÃO SALVAR*/
+.botaosalvar {
+    font-family: "Source Sans 3", sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+    margin-left: 710px;
+    margin-top: 130px;
+    cursor: pointer;
+    background-color: #70cbcb;
+    width: 90px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+/*IMAGEM PREDIOS*/
+.predio {
     margin-top: 110px;
     margin-left: 170px;
 }

@@ -82,126 +82,40 @@ body {
     text-decoration: none;
 }
 
-/*QUEM SOMOS*/
-.comofunciona {
-    margin-left: 690px;
+/*TAG ACESSIBILIDADE*/
+.acessibilidade {
     margin-top: 30px;
 }
 
-.comofuncionah1 {
+.acessibilidadeh1 {
     margin-top: -45px;
-    margin-left: 30px;
+    margin-left: 430px;
 }
 
-/*TEXTO COMO FUNCIONA*/
-.textocomofunciona {
-    font-family: "Source Sans 3", sans-serif;
-    font-family: "Source Sans Pro", sans-serif;
-    background-color: #f0ffff;
-    border-color: #70cbcb;
-    width: 80%;
-    margin-right: 10%;
-    margin-left: 10%;
-    border-color: 2px solid #70cbcb;
-    border-radius: 10px;
-}
-
-.fotoum {
-    width: 150px;
-    height: 100px;
-    margin-top: 40px;
-    margin-left: 210px;
-}
-
-.cadastro {
-    margin-left: 330px;
-    margin-top: -60px;
-}
-
-.fotodois {
-    width: 150px;
-    height: 100px;
-    margin-top: 40px;
-    margin-left: 210px;
-}
-
-.plano {
-    margin-left: 330px;
-    margin-top: -60px;
-}
-
-.fototres {
-    width: 150px;
-    height: 100px;
-    margin-top: 40px;
-    margin-left: 210px;
-}
-
-.calendario {
-    margin-left: 330px;
-    margin-top: -60px;
-}
-
-/*DO QUE PRECISO*/
-.doquepreciso {
-    margin-left: 1px;
+/*Imagens*/
+.imagemdelivery {
     margin-top: 30px;
+    margin-left: 130px;
 }
 
-.doqueprecisoh1 {
-    margin-top: -45px;
-    margin-left: 390px;
+.imagemacessibilidade {
+    margin-top: 30px;
+    margin-left: 850px;
 }
 
-/*texto do que preciso*/
-.textodoquepreciso {
+.imagemmoto {
+    margin-top: 30px;
+    margin-left: 130px;
+}
+
+.textomoto {
     font-family: "Source Sans 3", sans-serif;
     font-family: "Source Sans Pro", sans-serif;
-    background-color: #f0ffff;
-    border-color: #70cbcb;
-    width: 80%;
-    height: 300px;
-    margin-right: 10%;
-    margin-left: 10%;
-    border-radius: 10px;
+    margin-top: -180px;
+    margin-left: 340px;
 }
 
-.fotoquatro {
-    width: 150px;
-    height: 100px;
-    margin-top: 40px;
-    margin-left: 210px;
-}
-
-.documento {
-    margin-left: 330px;
-    margin-top: -60px;
-}
-
-.fotocinco {
-    width: 150px;
-    height: 100px;
-    margin-top: 40px;
-    margin-left: 210px;
-}
-
-.residencia {
-    margin-left: 330px;
-    margin-top: -60px;
-}
-
-.fotoseis {
-    width: 150px;
-    height: 100px;
-    margin-top: 40px;
-    margin-left: 210px;
-}
-
-.checagem {
-    margin-left: 330px;
-    margin-top: -60px;
-}
-
+/*imagem predio*/
 .predio {
     margin-top: 110px;
     margin-left: 170px;
