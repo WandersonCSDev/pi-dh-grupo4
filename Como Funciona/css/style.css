@@ -202,17 +202,12 @@ body {
 }
 
 .predio {
-<<<<<<< HEAD
-    margin-top: 110px;
-    margin-left: 170px;
-=======
   margin: 0;
 }
 
 .predio > img {
   width: 100%;
   padding-top: 100px;
->>>>>>> 6545b6145d10731f1d6dfe5b8d81c31268d21796
 }
 
 /*FOOTER*/
