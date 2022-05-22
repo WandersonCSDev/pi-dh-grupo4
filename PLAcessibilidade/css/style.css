@@ -91,141 +91,47 @@ body {
   text-shadow: 5px 5px 5px black;
 }
 
-/*cadastro do cartão*/
-.cadastrocartao {
-  margin-top: 30px;
-  margin-left: 650px;
-}
-
-/*painel do usuario*/
-.paineldousuario {
-  margin-left: 690px;
+/*TAG Acessibilidade*/
+.acessibilidade {
+  margin-left: 0px;
   margin-top: 30px;
 }
 
-.paineldousuarioh1 {
-  font-family: "Source Sans 3", sans-serif;
-  font-family: "Source Sans Pro", sans-serif;
-  color: black;
+.acessibilidadeh1 {
   margin-top: -45px;
-  margin-left: 30px;
+  margin-left: 420px;
 }
 
-.avatar {
-  margin-left: 20px;
-  margin-top: 30px;
+/*imagens*/
+.imagem1 {
+  margin-top: 150px;
+  margin-left: 50px;
 }
 
-.alterarfoto {
-  font-family: "Source Sans 3", sans-serif;
-  font-family: "Source Sans Pro", sans-serif;
-  color: black;
-  margin-left: 70px;
-  margin-top: 0px;
+.imagem2 {
+  margin-top: 100px;
+  margin-left: 850px;
 }
 
-/*BOTÕES*/
-.botaomeuspedidos {
-  font-family: "Source Sans 3", sans-serif;
-  font-family: "Source Sans Pro", sans-serif;
-  color: black;
-  margin-top: 80px;
-  margin-left: 30px;
-  width: 150px;
-  height: 32px;
-  background-color: #70cbcb;
-  cursor: pointer;
-  border-radius: 5px;
+.imagem3 {
+  margin-top: 100px;
+  margin-left: 50px;
 }
 
-.botaomodificarsenha {
-  font-family: "Source Sans 3", sans-serif;
-  font-family: "Source Sans Pro", sans-serif;
-  color: black;
-  margin-top: 80px;
-  margin-left: 30px;
-  width: 180px;
-  height: 32px;
-  background-color: #70cbcb;
-  cursor: pointer;
-  border-radius: 5px;
+.textoimagem3 {
+  margin-top: -160px;
+  margin-left: 350px;
 }
 
-.botaoenderecocadastral {
-  font-family: "Source Sans 3", sans-serif;
-  font-family: "Source Sans Pro", sans-serif;
-  color: black;
-  margin-top: 80px;
-  margin-left: 30px;
-  width: 210px;
-  height: 32px;
-  background-color: #70cbcb;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-/*QUADRO ROSA*/
-.quadrorosa {
-  font-family: "Source Sans 3", sans-serif;
-  font-family: "Source Sans Pro", sans-serif;
-  background-color: #ec7474;
-  border-radius: 5px;
-  margin-left: 440px;
-  margin-top: -290px;
-  width: 628px;
-  height: 332px;
-}
-
-.senha {
-  font-family: "Source Sans 3", sans-serif;
-  font-family: "Source Sans Pro", sans-serif;
-  color: #ffffff;
-  font-weight: bold;
-  font-size: 20px;
-  margin-left: 460px;
-  margin-top: -320px;
-}
-
-.novasenha {
-  font-family: "Source Sans 3", sans-serif;
-  font-family: "Source Sans Pro", sans-serif;
-  color: #ffffff;
-  font-weight: bold;
-  font-size: 20px;
-  margin-left: 460px;
-  margin-top: 70px;
-}
-
-.confirmar {
-  font-family: "Source Sans 3", sans-serif;
-  font-family: "Source Sans Pro", sans-serif;
-  color: #ffffff;
-  font-weight: bold;
-  font-size: 20px;
-  margin-left: 460px;
-  margin-top: 60px;
-}
-
-/*BOTÃO SALVAR*/
-.botaosalvar {
-  font-family: "Source Sans 3", sans-serif;
-  font-family: "Source Sans Pro", sans-serif;
-  color: black;
-  font-weight: bold;
-  font-size: 30px;
-  margin-left: 710px;
-  margin-top: 130px;
-  cursor: pointer;
-  background-color: #70cbcb;
-  width: 90px;
-  height: 40px;
-  border-radius: 5px;
-}
-
-/*IMAGEM PREDIOS*/
 .predio {
   margin-top: 110px;
   margin-left: 170px;
+  margin: 0;
+}
+
+.predio > img {
+  width: 100%;
+  padding-top: 100px;
 }
 
 /*FOOTER*/
@@ -234,6 +140,7 @@ body {
   font-family: "Source Sans Pro", sans-serif;
   margin: 0;
 }
+
 .footer.content {
   position: fixed;
   margin: 0;

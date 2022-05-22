@@ -3,306 +3,326 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Source+Sans+3:wght@400;600;700&display=swap");
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 /*ESTILOS GERAIS*/
 body {
-    font-family: "Source Sans Pro", "Source Sans 3";
-    background: #f4decd;
+  font-family: "Source Sans Pro", "Source Sans 3";
+  background: #f4decd;
 }
 
 /*HEADER*/
 * {
-    font-family: "Source Sans 3", sans-serif;
-    font-family: "Source Sans Pro", sans-serif;
+  font-family: "Source Sans 3", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
+.header-container {
+  height: 270px;
+  margin: 0 0 0 0;
+}
 .header-container > header {
-    display: flex;
-    width: 100%;
-    height: 270px;
-    margin: 5px;
-    background-color: #70cbcb;
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  background-color: #70cbcb;
 }
 
 .header-img-logo {
-    position: relative;
-    width: 200px;
-    top: 40px;
-    left: 20px;
+  position: relative;
+  width: 200px;
+  top: 40px;
+  left: 20px;
 }
 .header-nav-bar {
-    padding: 180px 60px 60px;
-    font-size: 20px;
-    margin-left: 30px;
-    margin-top: 40px;
+  position: relative;
+  padding: 180px 40px 60px;
+  font-size: 20px;
+  margin-left: 100px;
+  margin-top: 40px;
 }
 .header-nav-bar {
-    justify-content: space-around;
+  justify-content: space-around;
 }
 .header-nav-bar > nav > a {
-    color: #f0ffff;
-    text-decoration: none;
-    padding: 0px 20px 20px;
+  color: #f0ffff;
+  text-decoration: none;
+  font-size: larger;
+  text-shadow: 5px 5px 5px black;
+  padding: 0px 20px 20px;
 }
 
 #header-myItens {
-    padding: 50px 50px 0px;
+  padding: 50px 40px 40px 0px;
 }
 
 #header-myItens > img {
-    width: 20px;
-    margin-left: 30px;
-    margin-top: 145px;
+  width: 50px;
+  margin-left: 30px;
+  margin-top: 118px;
 }
 
 #header-myItens > a {
-    color: #f0ffff;
-    font-size: 20px;
-    text-align: end;
-    text-decoration: none;
+  color: #f0ffff;
+  font-size: 22px;
+  text-align: left;
+  margin-left: 10px;
+  text-shadow: 5px 5px 5px black;
+  text-decoration: none;
 }
 
 #header-login {
-    padding: 50px 70px 0px;
+  padding: 50px 30px 0px;
 }
 
 #header-login > img {
-    width: 20px;
-    margin-left: 43px;
-    margin-top: 145px;
+  width: 40px;
+  margin: 125px 0 0 30px;
 }
 #header-login > a {
-    color: #f0ffff;
-    font-size: 20px;
-    margin-left: 30px;
-    text-decoration: none;
+  color: #f0ffff;
+  font-size: 22px;
+  margin-left: 22px;
+  text-decoration: none;
+  text-shadow: 5px 5px 5px black;
 }
 
 /*painel do usuario*/
 .paineldousuario {
-    margin-left: 690px;
-    margin-top: 30px;
+  margin-left: 690px;
+  margin-top: 30px;
 }
 
 .paineldousuarioh1 {
-    font-family: "Source Sans 3", sans-serif;
-    font-family: "Source Sans Pro", sans-serif;
-    color: black;
-    margin-top: -45px;
-    margin-left: 30px;
+  font-family: "Source Sans 3", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
+  color: black;
+  margin-top: -45px;
+  margin-left: 30px;
 }
 
 .avatar {
-    margin-left: 20px;
-    margin-top: 30px;
+  margin-left: 20px;
+  margin-top: 30px;
 }
 
 .alterarfoto {
-    font-family: "Source Sans 3", sans-serif;
-    font-family: "Source Sans Pro", sans-serif;
-    color: black;
-    margin-left: 70px;
-    margin-top: 0px;
+  font-family: "Source Sans 3", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
+  color: black;
+  margin-left: 70px;
+  margin-top: 0px;
 }
 
 /*BOTÕES*/
 .botaomeuspedidos {
-    font-family: "Source Sans 3", sans-serif;
-    font-family: "Source Sans Pro", sans-serif;
-    color: black;
-    margin-top: 80px;
-    margin-left: 30px;
-    width: 150px;
-    height: 32px;
-    background-color: #70cbcb;
-    cursor: pointer;
-    border-radius: 5px;
+  font-family: "Source Sans 3", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
+  color: black;
+  margin-top: 80px;
+  margin-left: 30px;
+  width: 150px;
+  height: 32px;
+  background-color: #70cbcb;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
 .botaomodificarsenha {
-    font-family: "Source Sans 3", sans-serif;
-    font-family: "Source Sans Pro", sans-serif;
-    color: black;
-    margin-top: 80px;
-    margin-left: 30px;
-    width: 180px;
-    height: 32px;
-    background-color: #70cbcb;
-    cursor: pointer;
-    border-radius: 5px;
+  font-family: "Source Sans 3", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
+  color: black;
+  margin-top: 80px;
+  margin-left: 30px;
+  width: 180px;
+  height: 32px;
+  background-color: #70cbcb;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
 .botaoenderecocadastral {
-    font-family: "Source Sans 3", sans-serif;
-    font-family: "Source Sans Pro", sans-serif;
-    color: black;
-    margin-top: 80px;
-    margin-left: 30px;
-    width: 210px;
-    height: 32px;
-    background-color: #70cbcb;
-    cursor: pointer;
-    border-radius: 5px;
+  font-family: "Source Sans 3", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
+  color: black;
+  margin-top: 80px;
+  margin-left: 30px;
+  width: 210px;
+  height: 32px;
+  background-color: #70cbcb;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
 /*QUADRO ROSA*/
 .quadrorosa {
-    font-family: "Source Sans 3", sans-serif;
-    font-family: "Source Sans Pro", sans-serif;
-    background-color: #ec7474;
-    border-radius: 5px;
-    margin-left: 400px;
-    margin-top: -290px;
-    width: 728px;
-    height: 332px;
+  font-family: "Source Sans 3", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
+  background-color: #ec7474;
+  border-radius: 5px;
+  margin-left: 400px;
+  margin-top: -290px;
+  width: 728px;
+  height: 332px;
 }
 
 .rua {
-    font-family: "Source Sans 3", sans-serif;
-    font-family: "Source Sans Pro", sans-serif;
-    color: #ffffff;
-    font-weight: bold;
-    font-size: 20px;
-    margin-left: 410px;
-    margin-top: -320px;
+  font-family: "Source Sans 3", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 410px;
+  margin-top: -320px;
 }
 
 .cep {
-    font-family: "Source Sans 3", sans-serif;
-    font-family: "Source Sans Pro", sans-serif;
-    color: #ffffff;
-    font-weight: bold;
-    font-size: 20px;
-    margin-left: 410px;
-    margin-top: 70px;
+  font-family: "Source Sans 3", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 410px;
+  margin-top: 70px;
 }
 
 .cidade {
-    font-family: "Source Sans 3", sans-serif;
-    font-family: "Source Sans Pro", sans-serif;
-    color: #ffffff;
-    font-weight: bold;
-    font-size: 20px;
-    margin-left: 410px;
-    margin-top: 60px;
+  font-family: "Source Sans 3", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 410px;
+  margin-top: 60px;
 }
 
 .numero {
-    font-family: "Source Sans 3", sans-serif;
-    font-family: "Source Sans Pro", sans-serif;
-    color: #ffffff;
-    font-weight: bold;
-    font-size: 20px;
-    margin-left: 910px;
-    margin-top: -285px;
+  font-family: "Source Sans 3", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 910px;
+  margin-top: -285px;
 }
 
 .bairro {
-    font-family: "Source Sans 3", sans-serif;
-    font-family: "Source Sans Pro", sans-serif;
-    color: #ffffff;
-    font-weight: bold;
-    font-size: 20px;
-    margin-left: 910px;
-    margin-top: 65px;
+  font-family: "Source Sans 3", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 910px;
+  margin-top: 65px;
 }
 
 .uf {
-    font-family: "Source Sans 3", sans-serif;
-    font-family: "Source Sans Pro", sans-serif;
-    color: #ffffff;
-    font-weight: bold;
-    font-size: 20px;
-    margin-left: 910px;
-    margin-top: 80px;
+  font-family: "Source Sans 3", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 910px;
+  margin-top: 80px;
 }
 
 /*BOTÃO SALVAR*/
 .botaosalvar {
-    font-family: "Source Sans 3", sans-serif;
-    font-family: "Source Sans Pro", sans-serif;
-    color: black;
-    font-weight: bold;
-    font-size: 30px;
-    margin-left: 710px;
-    margin-top: 130px;
-    cursor: pointer;
-    background-color: #70cbcb;
-    width: 90px;
-    height: 40px;
-    border-radius: 5px;
+  font-family: "Source Sans 3", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
+  color: black;
+  font-weight: bold;
+  font-size: 30px;
+  margin-left: 710px;
+  margin-top: 130px;
+  cursor: pointer;
+  background-color: #70cbcb;
+  width: 90px;
+  height: 40px;
+  border-radius: 5px;
 }
 
 /*IMAGEM PREDIOS*/
 .predio {
-    margin-top: 110px;
-    margin-left: 170px;
+  margin-top: 110px;
+  margin-left: 170px;
 }
 
 /*FOOTER*/
 * {
-    font-family: "Source Sans 3", sans-serif;
-    font-family: "Source Sans Pro", sans-serif;
-    margin: 0;
+  font-family: "Source Sans 3", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
+  margin: 0;
 }
 .footer.content {
-    position: fixed;
-    margin: 0;
-    padding: 0;
+  position: fixed;
+  margin: 0;
+  padding: 0;
 }
 
 .footer-container > footer {
-    display: flex;
-    background-color: #70cbcb;
-    height: 380px;
+  display: flex;
+  background-color: #70cbcb;
+  height: 380px;
 }
 
 #minimal-logo {
-    padding: 30px 50px 10px 20px;
-    height: 110px;
+  padding: 30px 50px 10px 10px;
+  height: 110px;
 }
 
 #Nossos-contatos {
-    text-align: right;
-    font-size: 32px;
-    font-weight: 600;
-    color: #f0ffff;
+  text-align: right;
+  font-size: 28px;
+  font-weight: 600;
+  color: #f0ffff;
 }
 
 .footer-contacts-info {
-    padding: 100px 20px 0px 20px;
+  padding: 100px 20px 0px 0px;
 }
 
 .footer-contacts-info > img {
-    width: 40px;
-    padding: 15px 20px 0px 0px;
+  width: 40px;
+  padding: 15px 20px 0px 0px;
 }
 
 .footer-contacts-info > label {
-    font-size: 28px;
-    color: #f0ffff;
+  font-size: 20px;
+  color: #f0ffff;
+  text-shadow: none;
 }
 
 .footer-social-a-icons {
-    padding: 50px 20px 0px 20px;
+  padding: 50px 10px 0px 90px;
+  flex-wrap: nowrap;
 }
 
 .footer-social-a-icons img {
-    width: 70px;
-    padding: 10px 20px 0px 0px;
+  width: 50px;
+  padding: 10px 20px 0px 0px;
 }
 
 #footer-end-line {
-    width: 100%;
-    height: 60px;
-    background-color: #70cbcb;
-    border-top: solid 3px #f0ffff;
-    text-align: center;
-    color: #f0ffff;
-    font-size: 22px;
-    font-weight: 600;
+  width: 100%;
+  height: 60px;
+  background-color: #70cbcb;
+  border-top: solid 3px #f0ffff;
+  text-align: center;
+  color: #f0ffff;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+#footer-end-line a {
+  text-decoration: none;
+}
+:hover#footer-end-line a {
+  text-decoration: none;
+  color: #ffffff;
 }
