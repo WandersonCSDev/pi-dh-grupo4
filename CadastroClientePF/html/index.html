@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Cadastro Cliente</title>
+        <link rel="stylesheet" href="/CadastroCliente/style.css" />
+    </head>
+    <body>
+        <div class="header-container">
+            <header>
+                <div class="header-img-logo">
+                    <img
+                        src="../img/u-scooterlogo.svg"
+                        width="360px"
+                        alt="U-SCOOTER logotipo"
+                    />
+                </div>
+                <div class="header-nav-bar">
+                    <nav>
+                        <a href="#">Home</a>
+                        <a href="#">Quem somos</a>
+                        <a href="#">Como funciona</a>
+                        <a href="#">Contato</a>
+                    </nav>
+                </div>
+                <div id="header-myItens">
+                    <img src="../img/Sacola.svg" alt="" /> <br />
+                    <a href="#">Meus Itens</a>
+                </div>
+                <div id="header-login">
+                    <img src="../img/login.svg" alt="" /> <br />
+                    <a href="#">Login</a>
+                </div>
+            </header>
+        </div>
+        <main>
+            <div>
+                <h1>CADASTRO</h1>
+            </div>
+            <div class="form-cadastro">
+                <p>
+                    <label class="radio-inline col-sm-4"
+                        ><input
+                            type="radio"
+                            name="optradio"
+                            value="juridica"
+                            onclick="pessoa(this.value);"
+                        />Pessoa Juridica</label
+                    >
+                    <label class="radio-inline col-sm-4"
+                        ><input
+                            type="radio"
+                            name="optradio"
+                            value="fisica"
+                            onclick="pessoa(this.value);"
+                        />Pessoa Fisica</label
+                    >
+                </p>
+            </div>
+
+            <div id="juridica" style="display: none">
+                <div class="form-cadastro">
+                    <label class="control-label col-sm-2" for="txtRazaosocial"
+                        >Razão Social: *</label
+                    >
+                    <div class="col-sm-8">
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="txtRazaosocial"
+                            name="txtRazaosocial"
+                            required
+                        />
+                    </div>
+                </div>
+
+                <div class="form-cadastro">
+                    <label class="control-label col-sm-2" for="txtNomefantasia"
+                        >Nome Fantasia: *</label
+                    >
+                    <div class="col-sm-8">
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="txtNomefantasia"
+                            required
+                            name="txtNomefantasia"
+                        />
+                    </div>
+                </div>
+
+                <div class="form-cadastro">
+                    <label class="control-label col-sm-2" for="txtCnpj"
+                        >CNPJ: *</label
+                    >
+                    <div class="col-sm-3">
+                        <input
+                            type="numbe"
+                            class="form-control cnpj"
+                            id="txtCnpj"
+                            name="txtCnpj"
+                            required
+                        />
+                    </div>
+
+                    <label class="control-label col-sm-2" for="txtIe"
+                        >I.E.: *
+                    </label>
+                    <div class="col-sm-3">
+                        <input
+                            type="text"
+                            class="form-control ie"
+                            id="txtIe"
+                            name="txtIe"
+                            required
+                        />
+                    </div>
+                </div>
+
+                <div class="form-cadastro">
+                    <label
+                        class="control-label col-sm-2"
+                        for="txtNacionalidadePJ"
+                        >Nacionalidade *</label
+                    >
+                    <div class="col-sm-8">
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="txtNacionalidadePJ"
+                            required
+                            name="txtNacionalidadePJ"
+                        />
+                    </div>
+                </div>
+
+                <div class="form-cadastro">
+                    <label
+                        class="control-label col-sm-2"
+                        for="txtNaturalidadePJ"
+                        >Naturalidade: *</label
+                    >
+                    <div class="col-sm-8">
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="txtNaturalidadePJ"
+                            required
+                            name="txtNaturalidadePJ"
+                        />
+                    </div>
+                </div>
+
+                <div class="form-cadastro">
+                    <label class="control-label col-sm-2" for="txtUfPJ"
+                        >UF: *</label
+                    >
+                    <div class="col-sm-8">
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="txtUfPJ"
+                            required
+                            name="txtUfPJ"
+                        />
+                    </div>
+                </div>
+
+                <div class="form-cadastro">
+                    <label class="control-label col-sm-2" for="txtCepPJ"
+                        >CEP: *</label
+                    >
+                    <div class="col-sm-8">
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="txtCepPJ"
+                            required
+                            name="txtCepPJ"
+                        />
+                    </div>
+                </div>
+
+                <div class="form-cadastro">
+                    <label class="control-label col-sm-2" for="txtEnderecoPJ"
+                        >Endereço: *</label
+                    >
+                    <div class="col-sm-8">
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="txtEnderecoPJ"
+                            required
+                            name="txtEnderecoPJ"
+                        />
+                    </div>
+                </div>
+
+                <div class="form-cadastro">
+                    <label class="control-label col-sm-2" for="txtNumeroPJ"
+                        >Número: *</label
+                    >
+                    <div class="col-sm-8">
+                        <input
+                            type="number"
+                            class="form-control"
+                            id="txtNumeroPJ"
+                            required
+                            name="txtNumeroPJ"
+                        />
+                    </div>
+                </div>
+
+                <div class="form-cadastro">
+                    <label class="control-label col-sm-2" for="txtComplementoPJ"
+                        >Complemento: *</label
+                    >
+                    <div class="col-sm-8">
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="txtComplementoPJ"
+                            required
+                            name="txtComplementoPJ"
+                        />
+                    </div>
+                </div>
+
+                <div class="form-cadastro">
+                    <label class="control-label col-sm-2" for="txtEmailPJ"
+                        >E-mail: *</label
+                    >
+                    <div class="col-sm-8">
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="txtEmailPJ"
+                            required
+                            name="txtEmailPJ"
+                        />
+                    </div>
+                </div>
+
+                <div class="form-cadastro">
+                    <label class="control-label col-sm-2" for="txtTelefonePJ"
+                        >Telefone: *</label
+                    >
+                    <div class="col-sm-8">
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="txtTelefonePJ"
+                            required
+                            name="txtTelefonePJ"
+                        />
+                    </div>
+                </div>
+
+                <div class="form-cadastro">
+                    <label class="control-label col-sm-2" for="txtCelularPJ"
+                        >Celular: *</label
+                    >
+                    <div class="col-sm-8">
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="txtCelularPJ"
+                            required
+                            name="txtCelularPJ"
+                        />
+                    </div>
+                </div>
+            </div>
+
+            <div id="fisica" style="display: none">
+                <div class="form-cadastro">
+                    <label class="control-label col-sm-2" for="txtNomePF"
+                        >Nome: *</label
+                    >
+                    <div class="col-sm-8">
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="txtNomePF"
+                            required
+                            name="txtNomePF"
+                        />
+                    </div>
+                </div>
+
+                <div class="form-cadastro">
+                    <label class="control-label col-sm-2" for="txtCPF"
+                        >CPF: *</label
+                    >
+                    <div class="col-sm-3">
+                        <input
+                            type="text"
+                            class="form-control cpf"
+                            id="txtCPF"
+                            name="txtCPF"
+                            required
+                        />
+                    </div>
+
+                    <label class="control-label col-sm-2" for="txtRG"
+                        >RG: *
+                    </label>
+                    <div class="col-sm-3">
+                        <input
+                            type="text"
+                            class="form-control rg"
+                            id="txtRG"
+                            name="txtRG"
+                            onkeypress="return SomenteNumero(event)"
+                            required
+                        />
+                    </div>
+
+                    <div class="form-cadastro">
+                        <label class="control-label col-sm-2" for="txtSexoPF"
+                            >Sexo: *</label
+                        >
+                        <div class="col-sm-8">
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="txtSexoPF"
+                                required
+                                name="txtSexoPF"
+                            />
+                        </div>
+                    </div>
+
+                    <div class="form-cadastro">
+                        <label
+                            class="control-label col-sm-2"
+                            for="txtDataNascPF"
+                            >Data de Nascimento: *</label
+                        >
+                        <div class="col-sm-8">
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="txtDataNascPF"
+                                required
+                                name="txtDataNascPF"
+                            />
+                        </div>
+                    </div>
+                    <div class="form-cadastro">
+                        <label
+                            class="control-label col-sm-2"
+                            for="txtEstCivilPF"
+                            >Estado Civil: *</label
+                        >
+                        <div class="col-sm-8">
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="txtEstCivilPF"
+                                required
+                                name="txtEstCivilPF"
+                            />
+                        </div>
+                    </div>
+                    <div class="form-cadastro">
+                        <label
+                            class="control-label col-sm-2"
+                            for="txtNacionalidadePF"
+                            >Nacionalidade: *</label
+                        >
+                        <div class="col-sm-8">
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="txtNacionalidadePF"
+                                required
+                                name="txtNacionalidadePF"
+                            />
+                        </div>
+                    </div>
+                    <div class="form-cadastro">
+                        <label
+                            class="control-label col-sm-2"
+                            for="txtNaturalidadePF"
+                            >Naturalidade: *</label
+                        >
+                        <div class="col-sm-8">
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="txtNaturaliadePF"
+                                required
+                                name="txtNaturalidadePF"
+                            />
+                        </div>
+                    </div>
+                    <div class="form-cadastro">
+                        <label class="control-label col-sm-2" for="txtNomePF"
+                            >UF: *</label
+                        >
+                        <div class="col-sm-8">
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="txtUfPF"
+                                required
+                                name="txtUfPF"
+                            />
+                        </div>
+                    </div>
+                    <div class="form-cadastro">
+                        <label
+                            class="control-label col-sm-2"
+                            for="txtNomeDoPaiPF"
+                            >Nome do Pai: *</label
+                        >
+                        <div class="col-sm-8">
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="txtNomeDoPaiPF"
+                                required
+                                name="txtNomeDoPaiPF"
+                            />
+                        </div>
+                    </div>
+                    <div class="form-cadastro">
+                        <label
+                            class="control-label col-sm-2"
+                            for="txtNomeDaMaePF"
+                            >Nome da Mãe: *</label
+                        >
+                        <div class="col-sm-8">
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="txtNomeDaMaePF"
+                                required
+                                name="txtNomeDaMaePF"
+                            />
+                        </div>
+                    </div>
+                    <div class="form-cadastro">
+                        <label class="control-label col-sm-2" for="txtCepPF"
+                            >CEP: *</label
+                        >
+                        <div class="col-sm-8">
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="txtCpfPF"
+                                required
+                                name="txtCepPF"
+                            />
+                        </div>
+                    </div>
+                    <div class="form-cadastro">
+                        <label
+                            class="control-label col-sm-2"
+                            for="txtEnderecoPF"
+                            >Endereço: *</label
+                        >
+                        <div class="col-sm-8">
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="txtEnderecoPF"
+                                required
+                                name="txtEnderecoPF"
+                            />
+                        </div>
+                    </div>
+                    <div class="form-cadastro">
+                        <label class="control-label col-sm-2" for="txtNumeroPF"
+                            >Número: *</label
+                        >
+                        <div class="col-sm-8">
+                            <input
+                                type="number"
+                                class="form-control"
+                                id="txtNumeroPF"
+                                required
+                                name="txtNumeroPF"
+                            />
+                        </div>
+                    </div>
+                    <div class="form-cadastro">
+                        <label
+                            class="control-label col-sm-2"
+                            for="txtComplementoPF"
+                            >Complemento: *</label
+                        >
+                        <div class="col-sm-8">
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="txtComplementoPF"
+                                required
+                                name="txtComplementoPF"
+                            />
+                        </div>
+                    </div>
+                    <div class="form-cadastro">
+                        <label class="control-label col-sm-2" for="txtEmailPF"
+                            >E-mail: *</label
+                        >
+                        <div class="col-sm-8">
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="txtEmailPF"
+                                required
+                                name="txtEmailPF"
+                            />
+                        </div>
+                    </div>
+                    <div class="form-cadastro">
+                        <label
+                            class="control-label col-sm-2"
+                            for="txtTelefonePF"
+                            >Telefone: *</label
+                        >
+                        <div class="col-sm-8">
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="txtTelefonePF"
+                                required
+                                name="txtTelefonePF"
+                            />
+                        </div>
+                    </div>
+                    <div class="form-cadastro">
+                        <label class="control-label col-sm-2" for="txtCelularPF"
+                            >Celular: *</label
+                        >
+                        <div class="col-sm-8">
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="txtCelularPF"
+                                required
+                                name="txtCelularPF"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script>
+                function pessoa(tipo) {
+                    if (tipo == "fisica") {
+                        document.getElementById("fisica").style.display =
+                            "inline";
+                        document.getElementById("juridica").style.display =
+                            "none";
+                    } else if (tipo == "juridica") {
+                        document.getElementById("fisica").style.display =
+                            "none";
+                        document.getElementById("juridica").style.display =
+                            "inline";
+                    }
+                }
+            </script>
+
+            <div>
+                <button type="submit" name="enviar">ENVIAR</button>
+                <button type="reset" name="limpar">LIMPAR</button>
+                <button type="button" name="voltar">VOLTAR</button>
+                <button type="button" name="ajuda">AJUDA</button>
+            </div>
+        </main>
+        <!--================================FOOTER=================================-->
+        <div class="footer-content fixed-bottom">
+            <div class="footer-container">
+                <footer>
+                    <div>
+                        <a href="#"
+                            ><img
+                                id="minimal-logo"
+                                src="../img/minimal-logo.svg"
+                                alt="minimal-logo"
+                        /></a>
+                    </div>
+                    <div class="footer-contacts-info">
+                        <label id="Nossos-contatos">Nossos Contatos</label>
+                        <br />
+                        <img
+                            src="../img/Contact Call.svg"
+                            alt="contact Call icon"
+                        />
+                        <label>(11) 2404-4856</label> <br />
+                        <img src="../img/Contact Mail.svg" alt="" />
+                        <label>contato@u-scooter.com</label> <br />
+                        <img src="../img/Location.svg" alt="" />
+                        <label
+                            >Avenida das Bromélias, 960 - Moema - São Paulo -
+                            07196-015</label
+                        >
+                        <br />
+                    </div>
+                    <div class="footer-social-a-icons">
+                        <a href="https://facebook.com"
+                            ><img
+                                src="../img/Facebook (1).svg"
+                                alt="facebook icon"
+                        /></a>
+                        <a href="https://instagram.com"
+                            ><img
+                                src="../img/Instagram (1).svg"
+                                alt="instagram icon"
+                        /></a>
+                        <a href="https://web.whatsapp.com/"
+                            ><img src="../img/Whatsapp (1).svg" alt=""
+                        /></a>
+                    </div>
+                </footer>
+            </div>
+            <div id="footer-end-line">
+                <p>
+                    ® U-SCOOTER – Todos os direitos reservados.
+                    <a id="footer-end-line-a" href="#">www.u-scooter.com.br</a>
+                </p>
+            </div>
+        </div>
+    </body>
+</html>
