@@ -5,7 +5,8 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Source Sans Pro", "Source Sans 3", "sans-serif";
+  font-family: "Source Sans 3", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 /*ESTILOS GERAIS*/
@@ -87,14 +88,13 @@ body {
 }
 
 /*cadastro do cartão*/
-.cadastrocartao {
+.cadastro-cartao {
+  position: relative;
   margin-top: 30px;
   margin-left: 650px;
 }
 
-.cadastrocartaoh1 {
-  font-family: "Source Sans 3", sans-serif;
-  font-family: "Source Sans Pro", sans-serif;
+.cadastro-cartao h1 {
   color: #ffffff;
   text-shadow: 5px 5px 5px black;
   margin-top: -45px;
@@ -108,24 +108,33 @@ body {
   background-color: #70cbcb;
   box-shadow: 5px 5px 5px black;
   border-radius: 5px;
-  margin-left: 80px;
+  margin-left: 40px;
   margin-top: 150px;
   width: 728px;
   height: 332px;
 }
 
-label {
+.cadastro-cartao {
   text-shadow: 5px 5px 5px black;
+}
+
+.cadastro-cartao-option {
+  position: relative;
+  width: 18%;
+  font-size: larger;
+  font-weight: 600;
+  color: #f0ffff;
+  background-color: #70cbcb;
 }
 
 .nome1 {
   font-family: "Source Sans 3", sans-serif;
   font-family: "Source Sans Pro", sans-serif;
+  margin-left: 50px;
   color: #ffffff;
   font-weight: bold;
   font-size: 20px;
-  margin-left: 100px;
-  margin-top: -320px;
+  top: 30%;
 }
 .nome1 input {
   width: 250px;
@@ -142,7 +151,7 @@ label {
   color: #ffffff;
   font-weight: bold;
   font-size: 20px;
-  margin-left: 100px;
+  margin-left: 50px;
   margin-top: 70px;
 }
 .numero input {
@@ -160,7 +169,7 @@ label {
   color: #ffffff;
   font-weight: bold;
   font-size: 20px;
-  margin-left: 100px;
+  margin-left: 50px;
   margin-top: 60px;
 }
 .nome2 input {
@@ -177,7 +186,7 @@ label {
   color: #ffffff;
   font-weight: bold;
   font-size: 20px;
-  margin-left: 600px;
+  margin-left: 400px;
   margin-top: -285px;
 }
 .validade input {
@@ -195,8 +204,8 @@ label {
   color: #ffffff;
   font-weight: bold;
   font-size: 20px;
-  margin-left: 600px;
-  margin-top: 65px;
+  margin-left: 400px;
+  margin-top: 71px;
 }
 
 .seguranca input {
@@ -226,7 +235,7 @@ label {
   border-radius: 5px;
 }
 
-.imagemcartao {
+.imagem-cartao {
   margin-top: -20px;
   margin-left: 800px;
 }
