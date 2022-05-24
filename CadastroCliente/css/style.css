@@ -90,14 +90,12 @@ body {
 /*CADASTRO*/
 
 main {
-  display: flexbox;
-  width: 100%;
   margin: 5% 0 5% 0;
 }
-.form-cadastro {
-  display: flex;
-  align-content: space-around;
-  padding: 8px 20px 8px 5px;
+.cad-cliente-forms {
+  margin: 0 15% 0 15%;
+  background-color: #70cbcb;
+  width: 70%;
 }
 
 /*FOOTER*/

@@ -40,9 +40,9 @@
       <div>
         <h1>CADASTRO</h1>
       </div>
-      <div class="form-cadastro">
+      <div class="form-cadastro-option">
         <p>
-          <label class="radio-inline col-sm-4"
+          <label class="radio-inline"
             ><input
               type="radio"
               name="optradio"
@@ -50,7 +50,7 @@
               onclick="pessoa(this.value);"
             />Pessoa Juridica</label
           >
-          <label class="radio-inline col-sm-4"
+          <label class="radio-inline"
             ><input
               type="radio"
               name="optradio"
@@ -60,427 +60,526 @@
           >
         </p>
       </div>
+      <div class="cad-cliente-forms">
+        <form id="juridica" style="display: none">
+          <table border="0">
+            <tr>
+              <td>
+                <label class="control-label col-sm-2" for="txtRazaosocial"
+                  >Razão Social:
+                </label>
+              </td>
+              <td>
+                <label class="control-label" for="txtNomefantasia"
+                  >Nome Fantasia:
+                </label>
+              </td>
+              <td>
+                <label class="control-label" for="txtIe">I.E.: </label>
+              </td>
+              <td>
+                <label class="control-label" for="txtCnpj">CNPJ: </label>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="txtRazaosocial"
+                  name="txtRazaosocial"
+                  required
+                />
+              </td>
+              <td>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="txtNomefantasia"
+                  required
+                  name="txtNomefantasia"
+                />
+              </td>
+              <td>
+                <input
+                  type="text"
+                  class="form-control cnpj"
+                  id="txtCnpj"
+                  name="txtCnpj"
+                  required
+                />
+              </td>
+              <td>
+                <input
+                  type="text"
+                  class="form-control ie"
+                  id="txtIe"
+                  name="txtIe"
+                  required
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label class="control-label" for="SelStatusFuncionalPJ"
+                  >Situação de Funcionamento</label
+                >
+              </td>
+              <td>
+                <label class="control-label" for="txtEmailPJ">E-mail: </label>
+              </td>
+              <td><label class="control-label" for="txtCepPJ">CEP: </label></td>
+              <td>
+                <label class="control-label" for="txtEnderecoPJ"
+                  >Endereço:</label
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <select
+                  class="form-control"
+                  id="SelStatusFuncionalPJ"
+                  required
+                  name="SelStatusFuncionalPJ"
+                >
+                  <option value="Installing">Em instalação</option>
+                  <option value="Operational">Em Operação</option>
+                </select>
+              </td>
+              <td>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="txtEmailPJ"
+                  required
+                  name="txtEmailPJ"
+                />
+              </td>
+              <td>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="txtCepPJ"
+                  required
+                  name="txtCepPJ"
+                />
+              </td>
+              <td>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="txtEnderecoPJ"
+                  required
+                  name="txtEnderecoPJ"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label class="control-label" for="txtNumeroPJ">Número: </label>
+              </td>
+              <td>
+                <label class="control-label" for="txtComplementoPJ"
+                  >Complemento:
+                </label>
+              </td>
+              <td>
+                <label class="control-label" for="selUfPJ"
+                  >UF (Domicílio Fiscal):
+                </label>
+              </td>
+              <td>
+                <label class="control-label" for="txtTelefone1lPJ"
+                  >Telefone 1:
+                </label>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="txtNumeroPJ"
+                  required
+                  name="txtNumeroPJ"
+                />
+              </td>
+              <td>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="txtComplementoPJ"
+                  required
+                  name="txtComplementoPJ"
+                />
+              </td>
+              <td>
+                <select
+                  class="form-control"
+                  id="txtUfPJ"
+                  required
+                  name="SelUfPJ"
+                >
+                  <option>AC</option>
+                  <option>AL</option>
+                  <option>AP</option>
+                  <option>AM</option>
+                  <option>BA</option>
+                  <option>CE</option>
+                  <option>DF</option>
+                  <option>ES</option>
+                  <option>GO</option>
+                  <option>MA</option>
+                  <option>MT</option>
+                  <option>MS</option>
+                  <option>MG</option>
+                  <option>PA</option>
+                  <option>PB</option>
+                  <option>PR</option>
+                  <option>PE</option>
+                  <option>PI</option>
+                  <option>RJ</option>
+                  <option>RN</option>
+                  <option>RS</option>
+                  <option>RO</option>
+                  <option>RR</option>
+                  <option>SC</option>
+                  <option>SP</option>
+                  <option>SE</option>
+                  <option>TO</option>
+                </select>
+              </td>
+              <td>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="txtTelefone1lPJ"
+                  required
+                  name="txtTelefone1lPJ"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label class="control-label" for="txtTelefone2PJ"
+                  >Telefone 2:
+                </label>
+              </td>
+              <td>
+                <label class="control-label" for="txtCelularPJ"
+                  >Celular:
+                </label>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="txtTelefone2PJ"
+                  required
+                  name="txtTelefone2PJ"
+                />
+              </td>
+              <td>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="txtCelularPJ"
+                  required
+                  name="txtCelularPJ"
+                />
+              </td>
+            </tr>
+          </table>
+          <div class="cadastro-PJ-buttons">
+            <button type="submit" name="enviarPJ">ENVIAR</button>
+            <button type="reset" name="limparPJ">LIMPAR</button>
+            <button type="button" name="voltarPJ">VOLTAR</button>
+            <button type="button" name="ajudaPJ">AJUDA</button>
+          </div>
+        </form>
 
-      <div id="juridica" style="display: none">
-        <label class="control-label col-sm-2" for="txtRazaosocial"
-          >Razão Social: *</label
-        >
-        <input
-          type="text"
-          class="form-control"
-          id="txtRazaosocial"
-          name="txtRazaosocial"
-          required
-        />
-
-        <label class="control-label col-sm-2" for="txtNomefantasia"
-          >Nome Fantasia: *</label
-        >
-        <input
-          type="text"
-          class="form-control"
-          id="txtNomefantasia"
-          required
-          name="txtNomefantasia"
-        />
-
-        <label class="control-label col-sm-2" for="txtCnpj">CNPJ: *</label>
-        <input
-          type="text"
-          class="form-control cnpj"
-          id="txtCnpj"
-          name="txtCnpj"
-          required
-        />
-        <label class="control-label col-sm-2" for="txtIe">I.E.: * </label>
-        <input
-          type="text"
-          class="form-control ie"
-          id="txtIe"
-          name="txtIe"
-          required
-        />
-
-        <label class="control-label col-sm-2" for="SelStatusFuncionalPJ"
-          >Situação de Funcionamento *</label
-        >
-        <select
-          class="form-control"
-          id="SelStatusFuncionalPJ"
-          required
-          name="SelStatusFuncionalPJ"
-        >
-          <option value="Installing">Em instalação</option>
-          <option value="Operational">Em Operação</option>
-        </select>
-
-        <label class="control-label col-sm-2" for="txtEmailPJ">E-mail: *</label>
-        <input
-          type="text"
-          class="form-control"
-          id="txtEmailPJ"
-          required
-          name="txtEmailPJ"
-        />
-
-        <label class="control-label col-sm-2" for="txtCepPJ">CEP: *</label>
-        <input
-          type="text"
-          class="form-control"
-          id="txtCepPJ"
-          required
-          name="txtCepPJ"
-        />
-
-        <label class="control-label col-sm-2" for="txtEnderecoPJ"
-          >Endereço: *</label
-        >
-        <input
-          type="text"
-          class="form-control"
-          id="txtEnderecoPJ"
-          required
-          name="txtEnderecoPJ"
-        />
-
-        <label class="control-label col-sm-2" for="txtNumeroPJ"
-          >Número: *</label
-        >
-        <input
-          type="number"
-          class="form-control"
-          id="txtNumeroPJ"
-          required
-          name="txtNumeroPJ"
-        />
-
-        <label class="control-label col-sm-2" for="txtComplementoPJ"
-          >Complemento: *</label
-        >
-        <input
-          type="text"
-          class="form-control"
-          id="txtComplementoPJ"
-          required
-          name="txtComplementoPJ"
-        />
-
-        <label class="control-label col-sm-2" for="txtUfPJ"
-          >UF (Domicílio Fiscal): *</label
-        >
-        <input
-          type="text"
-          class="form-control"
-          id="txtUfPJ"
-          required
-          name="txtUfPJ"
-        />
-
-        <label class="control-label col-sm-2" for="txtTelefone1lPJ"
-          >Telefone 1: *</label
-        >
-        <input
-          type="text"
-          class="form-control"
-          id="txtTelefone1lPJ"
-          required
-          name="txtTelefone1lPJ"
-        />
-
-        <label class="control-label col-sm-2" for="txtTelefone2PJ"
-          >Telefone 2: *</label
-        >
-        <input
-          type="text"
-          class="form-control"
-          id="txtTelefone2PJ"
-          required
-          name="txtTelefone2PJ"
-        />
-
-        <label class="control-label col-sm-2" for="txtCelularPJ"
-          >Celular: *</label
-        >
-        <input
-          type="text"
-          class="form-control"
-          id="txtCelularPJ"
-          required
-          name="txtCelularPJ"
-        />
-
-        <div class="cadastro-PJ-buttons">
-          <button type="submit" name="enviarPJ">ENVIAR</button>
-          <button type="reset" name="limparPJ">LIMPAR</button>
-          <button type="button" name="voltarPJ">VOLTAR</button>
-          <button type="button" name="ajudaPJ">AJUDA</button>
-        </div>
+        <form id="fisica" style="display: none">
+          <table border="0">
+            <tr>
+              <td>
+                <label class="control-label" for="txtNomePF">Nome: </label>
+              </td>
+              <td><label class="control-label" for="txtCPF">CPF: </label></td>
+              <td><label class="control-label" for="txtRG">RG: </label></td>
+              <td>
+                <label class="control-label" for="txtSexoPF">Sexo: </label>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="txtNomePF"
+                  required
+                  name="txtNomePF"
+                />
+              </td>
+              <td>
+                <input
+                  type="text"
+                  class="form-control cpf"
+                  id="txtCPF"
+                  name="txtCPF"
+                  required
+                />
+              </td>
+              <td>
+                <input
+                  type="text"
+                  class="form-control rg"
+                  id="txtRG"
+                  name="txtRG"
+                  onkeypress="return SomenteNumero(event)"
+                  required
+                />
+              </td>
+              <td>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="txtSexoPF"
+                  required
+                  name="txtSexoPF"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label class="control-label" for="txtDataNascPF"
+                  >Data de Nascimento:</label
+                >
+              </td>
+              <td>
+                <label class="control-label" for="txtEstCivilPF"
+                  >Estado Civil:</label
+                >
+              </td>
+              <td>
+                <label class="control-label" for="txtNacionalidadePF"
+                  >Nacionalidade:</label
+                >
+              </td>
+              <td>
+                <label class="control-label" for="txtNaturalidadePF"
+                  >Naturalidade:</label
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="txtDataNascPF"
+                  required
+                  name="txtDataNascPF"
+                />
+              </td>
+              <td>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="txtEstCivilPF"
+                  required
+                  name="txtEstCivilPF"
+                />
+              </td>
+              <td>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="txtNacionalidadePF"
+                  required
+                  name="txtNacionalidadePF"
+                />
+              </td>
+              <td>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="txtNaturaliadePF"
+                  required
+                  name="txtNaturalidadePF"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td><label class="control-label" for="SelUfPF">UF: </label></td>
+              <td>
+                <label class="control-label" for="txtNomeDoPaiPF"
+                  >Nome do Pai:</label
+                >
+              </td>
+              <td>
+                <label class="control-label" for="txtNomeDaMaePF"
+                  >Nome da Mãe:</label
+                >
+              </td>
+              <td><label class="control-label" for="txtCepPF">CEP: </label></td>
+            </tr>
+            <tr>
+              <td>
+                <select
+                  class="form-control"
+                  id="txtUfPF"
+                  required
+                  name="txtUfPF"
+                >
+                  <option>AC</option>
+                  <option>AL</option>
+                  <option>AP</option>
+                  <option>AM</option>
+                  <option>BA</option>
+                  <option>CE</option>
+                  <option>DF</option>
+                  <option>ES</option>
+                  <option>GO</option>
+                  <option>MA</option>
+                  <option>MT</option>
+                  <option>MS</option>
+                  <option>MG</option>
+                  <option>PA</option>
+                  <option>PB</option>
+                  <option>PR</option>
+                  <option>PE</option>
+                  <option>PI</option>
+                  <option>RJ</option>
+                  <option>RN</option>
+                  <option>RS</option>
+                  <option>RO</option>
+                  <option>RR</option>
+                  <option>SC</option>
+                  <option>SP</option>
+                  <option>SE</option>
+                  <option>TO</option>
+                </select>
+              </td>
+              <td></td>
+              <td>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="txtNomeDaMaePF"
+                  required
+                  name="txtNomeDaMaePF"
+                />
+              </td>
+              <td>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="txtCpfPF"
+                  required
+                  name="txtCepPF"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label class="control-label" for="txtEnderecoPF"
+                  >Endereço:</label
+                >
+              </td>
+              <td>
+                <label class="control-label" for="txtNumeroPF">Número: </label>
+              </td>
+              <td>
+                <label class="control-label" for="txtComplementoPF"
+                  >Complemento:</label
+                >
+              </td>
+              <td>
+                <label class="control-label" for="txtEmailPF">E-mail: </label>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="txtEnderecoPF"
+                  required
+                  name="txtEnderecoPF"
+                />
+              </td>
+              <td>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="txtNumeroPF"
+                  required
+                  name="txtNumeroPF"
+                />
+              </td>
+              <td>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="txtComplementoPF"
+                  required
+                  name="txtComplementoPF"
+                />
+              </td>
+              <td>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="txtEmailPF"
+                  required
+                  name="txtEmailPF"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label class="control-label" for="txtTelefonePF"
+                  >Telefone:</label
+                >
+              </td>
+              <td>
+                <label class="control-label" for="txtCelularPF"
+                  >Celular:
+                </label>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="txtTelefonePF"
+                  required
+                  name="txtTelefonePF"
+                />
+              </td>
+              <td>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="txtCelularPF"
+                  required
+                  name="txtCelularPF"
+                />
+              </td>
+            </tr>
+          </table>
+          <div class="cadastro-PF-buttons">
+            <button type="submit" name="enviaPF">ENVIAR</button>
+            <button type="reset" name="limparPF">LIMPAR</button>
+            <button type="button" name="voltarPF">VOLTAR</button>
+            <button type="button" name="ajudaPF">AJUDA</button>
+          </div>
+        </form>
       </div>
-
-      <div id="fisica" style="display: none">
-        <div class="form-cadastro">
-          <label class="control-label col-sm-2" for="txtNomePF">Nome: *</label>
-          <div class="col-sm-8">
-            <input
-              type="text"
-              class="form-control"
-              id="txtNomePF"
-              required
-              name="txtNomePF"
-            />
-          </div>
-        </div>
-
-        <div class="form-cadastro">
-          <label class="control-label col-sm-2" for="txtCPF">CPF: *</label>
-          <div class="col-sm-3">
-            <input
-              type="text"
-              class="form-control cpf"
-              id="txtCPF"
-              name="txtCPF"
-              required
-            />
-          </div>
-
-          <label class="control-label col-sm-2" for="txtRG">RG: * </label>
-          <div class="col-sm-3">
-            <input
-              type="text"
-              class="form-control rg"
-              id="txtRG"
-              name="txtRG"
-              onkeypress="return SomenteNumero(event)"
-              required
-            />
-          </div>
-
-          <div class="form-cadastro">
-            <label class="control-label col-sm-2" for="txtSexoPF"
-              >Sexo: *</label
-            >
-            <div class="col-sm-8">
-              <input
-                type="text"
-                class="form-control"
-                id="txtSexoPF"
-                required
-                name="txtSexoPF"
-              />
-            </div>
-          </div>
-
-          <div class="form-cadastro">
-            <label class="control-label col-sm-2" for="txtDataNascPF"
-              >Data de Nascimento: *</label
-            >
-            <div class="col-sm-8">
-              <input
-                type="text"
-                class="form-control"
-                id="txtDataNascPF"
-                required
-                name="txtDataNascPF"
-              />
-            </div>
-          </div>
-          <div class="form-cadastro">
-            <label class="control-label col-sm-2" for="txtEstCivilPF"
-              >Estado Civil: *</label
-            >
-            <div class="col-sm-8">
-              <input
-                type="text"
-                class="form-control"
-                id="txtEstCivilPF"
-                required
-                name="txtEstCivilPF"
-              />
-            </div>
-          </div>
-          <div class="form-cadastro">
-            <label class="control-label col-sm-2" for="txtNacionalidadePF"
-              >Nacionalidade: *</label
-            >
-            <div class="col-sm-8">
-              <input
-                type="text"
-                class="form-control"
-                id="txtNacionalidadePF"
-                required
-                name="txtNacionalidadePF"
-              />
-            </div>
-          </div>
-          <div class="form-cadastro">
-            <label class="control-label col-sm-2" for="txtNaturalidadePF"
-              >Naturalidade: *</label
-            >
-            <div class="col-sm-8">
-              <input
-                type="text"
-                class="form-control"
-                id="txtNaturaliadePF"
-                required
-                name="txtNaturalidadePF"
-              />
-            </div>
-          </div>
-          <div class="form-cadastro">
-            <label class="control-label col-sm-2" for="txtNomePF">UF: *</label>
-            <div class="col-sm-8">
-              <input
-                type="text"
-                class="form-control"
-                id="txtUfPF"
-                required
-                name="txtUfPF"
-              />
-            </div>
-          </div>
-          <div class="form-cadastro">
-            <label class="control-label col-sm-2" for="txtNomeDoPaiPF"
-              >Nome do Pai: *</label
-            >
-            <div class="col-sm-8">
-              <input
-                type="text"
-                class="form-control"
-                id="txtNomeDoPaiPF"
-                required
-                name="txtNomeDoPaiPF"
-              />
-            </div>
-          </div>
-          <div class="form-cadastro">
-            <label class="control-label col-sm-2" for="txtNomeDaMaePF"
-              >Nome da Mãe: *</label
-            >
-            <div class="col-sm-8">
-              <input
-                type="text"
-                class="form-control"
-                id="txtNomeDaMaePF"
-                required
-                name="txtNomeDaMaePF"
-              />
-            </div>
-          </div>
-          <div class="form-cadastro">
-            <label class="control-label col-sm-2" for="txtCepPF">CEP: *</label>
-            <div class="col-sm-8">
-              <input
-                type="text"
-                class="form-control"
-                id="txtCpfPF"
-                required
-                name="txtCepPF"
-              />
-            </div>
-          </div>
-          <div class="form-cadastro">
-            <label class="control-label col-sm-2" for="txtEnderecoPF"
-              >Endereço: *</label
-            >
-            <div class="col-sm-8">
-              <input
-                type="text"
-                class="form-control"
-                id="txtEnderecoPF"
-                required
-                name="txtEnderecoPF"
-              />
-            </div>
-          </div>
-          <div class="form-cadastro">
-            <label class="control-label col-sm-2" for="txtNumeroPF"
-              >Número: *</label
-            >
-            <div class="col-sm-8">
-              <input
-                type="number"
-                class="form-control"
-                id="txtNumeroPF"
-                required
-                name="txtNumeroPF"
-              />
-            </div>
-          </div>
-          <div class="form-cadastro">
-            <label class="control-label col-sm-2" for="txtComplementoPF"
-              >Complemento: *</label
-            >
-            <div class="col-sm-8">
-              <input
-                type="text"
-                class="form-control"
-                id="txtComplementoPF"
-                required
-                name="txtComplementoPF"
-              />
-            </div>
-          </div>
-          <div class="form-cadastro">
-            <label class="control-label col-sm-2" for="txtEmailPF"
-              >E-mail: *</label
-            >
-            <div class="col-sm-8">
-              <input
-                type="text"
-                class="form-control"
-                id="txtEmailPF"
-                required
-                name="txtEmailPF"
-              />
-            </div>
-          </div>
-          <div class="form-cadastro">
-            <label class="control-label col-sm-2" for="txtTelefonePF"
-              >Telefone: *</label
-            >
-            <div class="col-sm-8">
-              <input
-                type="text"
-                class="form-control"
-                id="txtTelefonePF"
-                required
-                name="txtTelefonePF"
-              />
-            </div>
-          </div>
-          <div class="form-cadastro">
-            <label class="control-label col-sm-2" for="txtCelularPF"
-              >Celular: *</label
-            >
-            <div class="col-sm-8">
-              <input
-                type="text"
-                class="form-control"
-                id="txtCelularPF"
-                required
-                name="txtCelularPF"
-              />
-            </div>
-          </div>
-        </div>
-        <div class="cadastro-PF-buttons">
-          <button type="submit" name="enviaPF">ENVIAR</button>
-          <button type="reset" name="limparPF">LIMPAR</button>
-          <button type="button" name="voltarPF">VOLTAR</button>
-          <button type="button" name="ajudaPF">AJUDA</button>
-        </div>
-      </div>
-      <script>
-        function pessoa(tipo) {
-          if (tipo == "fisica") {
-            document.getElementById("fisica").style.display = "inline";
-            document.getElementById("juridica").style.display = "none";
-          } else if (tipo == "juridica") {
-            document.getElementById("fisica").style.display = "none";
-            document.getElementById("juridica").style.display = "inline";
-          }
-        }
-      </script>
     </main>
     <!--================================FOOTER=================================-->
     <div class="footer-content fixed-bottom">
@@ -528,4 +627,15 @@
       </div>
     </div>
   </body>
+  <script>
+    function pessoa(tipo) {
+      if (tipo == "fisica") {
+        document.getElementById("fisica").style.display = "inline";
+        document.getElementById("juridica").style.display = "none";
+      } else if (tipo == "juridica") {
+        document.getElementById("fisica").style.display = "none";
+        document.getElementById("juridica").style.display = "inline";
+      }
+    }
+  </script>
 </html>
