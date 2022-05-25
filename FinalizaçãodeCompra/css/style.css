@@ -1,0 +1,359 @@
+/*FONTES*/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Source+Sans+Pro:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Source+Sans+3:wght@400;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*ESTILOS GERAIS*/
+body {
+  font-family: "Source Sans Pro", "Source Sans 3";
+  background: #f4decd;
+}
+
+/*HEADER*/
+* {
+  font-family: "Source Sans 3", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.header-container {
+  height: 270px;
+  margin: 0 0 0 0;
+}
+.header-container > header {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  background-color: #70cbcb;
+}
+
+.header-img-logo {
+  position: relative;
+  width: 200px;
+  top: 40px;
+  left: 20px;
+}
+.header-nav-bar {
+  position: relative;
+  padding: 180px 40px 60px;
+  font-size: 20px;
+  margin-left: 100px;
+  margin-top: 40px;
+}
+.header-nav-bar {
+  justify-content: space-around;
+}
+.header-nav-bar > nav > a {
+  color: #f0ffff;
+  text-decoration: none;
+  font-size: larger;
+  text-shadow: 5px 5px 5px black;
+  padding: 0px 20px 20px;
+}
+
+#header-myItens {
+  padding: 50px 40px 40px 0px;
+}
+
+#header-myItens > img {
+  width: 50px;
+  margin-left: 30px;
+  margin-top: 118px;
+}
+
+#header-myItens > a {
+  color: #f0ffff;
+  font-size: 22px;
+  text-align: left;
+  margin-left: 10px;
+  text-shadow: 5px 5px 5px black;
+  text-decoration: none;
+}
+
+#header-login {
+  padding: 50px 30px 0px;
+}
+
+#header-login > img {
+  width: 40px;
+  margin: 125px 0 0 30px;
+}
+#header-login > a {
+  color: #f0ffff;
+  font-size: 22px;
+  margin-left: 22px;
+  text-decoration: none;
+  text-shadow: 5px 5px 5px black;
+}
+
+/*cadastro do cartão*/
+.cadastrocartao {
+  margin-top: 30px;
+  margin-left: 650px;
+}
+
+.cadastrocartaoh1 {
+  font-family: "Source Sans 3", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #ffffff;
+  text-shadow: 5px 5px 5px black;
+  margin-top: -45px;
+  margin-left: 30px;
+}
+
+/*FINALIZAÇÃO DE COMPRA*/
+.fimcompra {
+  margin-left: 680px;
+  margin-top: 30px;
+}
+
+.fimcomprah1 {
+  font-family: "Source Sans 3", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
+  color: black;
+  margin-top: -45px;
+  margin-left: 30px;
+}
+
+.imagemmoto {
+  margin-left: 50px;
+  margin-top: 250px;
+}
+
+/*QUADRO ROSA*/
+.quadrorosa {
+  font-family: "Source Sans 3", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
+  background-color: #ec7474;
+  border-radius: 5px;
+  margin-left: 500px;
+  margin-top: -280px;
+  width: 728px;
+  height: 332px;
+}
+
+.uso {
+  font-family: "Source Sans 3", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 530px;
+  margin-top: -320px;
+}
+
+.plano {
+  font-family: "Source Sans 3", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 530px;
+  margin-top: 70px;
+}
+
+.adicionais {
+  font-family: "Source Sans 3", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 530px;
+  margin-top: 60px;
+}
+
+.valoradicionado {
+  font-family: "Source Sans 3", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 980px;
+  margin-top: -285px;
+}
+
+.valortotal {
+  font-family: "Source Sans 3", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 980px;
+  margin-top: 65px;
+}
+
+.finalizado {
+  font-family: "Source Sans 3", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 980px;
+  margin-top: 65px;
+}
+
+/*BOTÃO SALVAR*/
+.botaosalvar {
+  font-family: "Source Sans 3", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
+  color: black;
+  font-weight: bold;
+  font-size: 30px;
+  margin-left: 820px;
+  margin-top: 80px;
+  cursor: pointer;
+  background-color: #70cbcb;
+  width: 90px;
+  height: 40px;
+  border-radius: 5px;
+}
+
+.pagamento {
+  margin-left: 680px;
+  margin-top: 130px;
+}
+
+.pagamentoh1 {
+  font-family: "Source Sans 3", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
+  color: black;
+  margin-top: -50px;
+  margin-left: 20px;
+}
+
+/*botões de pagamento*/
+.botaocartao {
+  font-family: "Source Sans 3", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
+  color: black;
+  font-weight: bold;
+  font-size: 30px;
+  margin-left: 50px;
+  margin-top: 120px;
+  cursor: pointer;
+  background-color: #70cbcb;
+  width: 90px;
+  height: 40px;
+  border-radius: 5px;
+}
+
+.botaopix {
+  font-family: "Source Sans 3", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
+  color: black;
+  font-weight: bold;
+  font-size: 30px;
+  margin-left: 550px;
+  margin-top: -39px;
+  cursor: pointer;
+  background-color: #70cbcb;
+  width: 60px;
+  height: 40px;
+  border-radius: 5px;
+}
+
+.textopix {
+  margin-left: 510px;
+  margin-top: 20px;
+}
+
+.botaoretirada {
+  font-family: "Source Sans 3", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
+  color: black;
+  font-weight: bold;
+  font-size: 30px;
+  margin-left: 1000px;
+  margin-top: -105px;
+  cursor: pointer;
+  background-color: #70cbcb;
+  width: 290px;
+  height: 40px;
+  border-radius: 5px;
+}
+
+/*IMAGEM PREDIOS*/
+.predio {
+  margin-top: 110px;
+  margin-left: 170px;
+}
+
+/*FOOTER*/
+* {
+  font-family: "Source Sans 3", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
+  margin: 0;
+}
+.footer.content {
+  position: fixed;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-container > footer {
+  display: flex;
+  background-color: #70cbcb;
+  height: 380px;
+}
+
+#minimal-logo {
+  padding: 30px 50px 10px 10px;
+  height: 110px;
+}
+
+#Nossos-contatos {
+  text-align: right;
+  font-size: 28px;
+  font-weight: 600;
+  color: #f0ffff;
+}
+
+.footer-contacts-info {
+  padding: 100px 20px 0px 0px;
+}
+
+.footer-contacts-info > img {
+  width: 40px;
+  padding: 15px 20px 0px 0px;
+}
+
+.footer-contacts-info > label {
+  font-size: 20px;
+  color: #f0ffff;
+  text-shadow: none;
+}
+
+.footer-social-a-icons {
+  padding: 50px 10px 0px 90px;
+  flex-wrap: nowrap;
+}
+
+.footer-social-a-icons img {
+  width: 50px;
+  padding: 10px 20px 0px 0px;
+}
+
+#footer-end-line {
+  width: 100%;
+  height: 60px;
+  background-color: #70cbcb;
+  border-top: solid 3px #f0ffff;
+  text-align: center;
+  color: #f0ffff;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+#footer-end-line a {
+  text-decoration: none;
+}
+:hover#footer-end-line a {
+  text-decoration: none;
+  color: #ffffff;
+}
