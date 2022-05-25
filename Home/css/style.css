@@ -19,11 +19,13 @@ body {
   font-family: "Source Sans 3", sans-serif;
   font-family: "Source Sans Pro", sans-serif;
 }
+
 .header-container {
   height: 270px;
   margin: 0 0 0 0;
 }
-.header-container > header {
+
+.header-container>header {
   position: relative;
   display: flex;
   width: 100%;
@@ -38,6 +40,7 @@ body {
   top: 40px;
   left: 20px;
 }
+
 .header-nav-bar {
   position: relative;
   padding: 180px 40px 60px;
@@ -45,10 +48,12 @@ body {
   margin-left: 100px;
   margin-top: 40px;
 }
+
 .header-nav-bar {
   justify-content: space-around;
 }
-.header-nav-bar > nav > a {
+
+.header-nav-bar>nav>a {
   color: #f0ffff;
   text-decoration: none;
   font-size: larger;
@@ -60,13 +65,13 @@ body {
   padding: 50px 40px 40px 0px;
 }
 
-#header-myItens > img {
+#header-myItens>img {
   width: 50px;
   margin-left: 30px;
   margin-top: 118px;
 }
 
-#header-myItens > a {
+#header-myItens>a {
   color: #f0ffff;
   font-size: 22px;
   text-align: left;
@@ -79,17 +84,19 @@ body {
   padding: 50px 30px 0px;
 }
 
-#header-login > img {
+#header-login>img {
   width: 40px;
   margin: 125px 0 0 30px;
 }
-#header-login > a {
+
+#header-login>a {
   color: #f0ffff;
   font-size: 22px;
   margin-left: 22px;
   text-decoration: none;
   text-shadow: 1px 2px 3px #ec7474;
 }
+
 /*BANNER*/
 * {
   box-sizing: border-box;
@@ -100,16 +107,20 @@ body {
   scrollbar-color: transparent transparent;
   scrollbar-width: 0px;
 }
+
 *::-webkit-scrollbar {
   width: 0;
 }
+
 *::-webkit-scrollbar-track {
   background: transparent;
 }
+
 *::-webkit-scrollbar-thumb {
   background: transparent;
   border: none;
 }
+
 * {
   -ms-overflow-style: none;
 }
@@ -121,7 +132,8 @@ body {
   padding: 0 0;
   padding-top: 35px;
 }
-.carousel > ol,
+
+.carousel>ol,
 li {
   list-style: none;
   margin: 0;
@@ -129,12 +141,14 @@ li {
   color: #fff;
   text-align: center;
 }
+
 .carousel {
   position: relative;
   padding-top: 50%;
   filter: drop-shadow(0 0 10px #0003);
   perspective: 600px;
 }
+
 .carousel__viewport {
   position: absolute;
   top: 0;
@@ -146,22 +160,26 @@ li {
   scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
 }
+
 .carousel__slide {
   position: relative;
   align-content: center;
   flex: 0 0 100%;
   background-color: transparent;
 }
-.carousel__slide > img {
+
+.carousel__slide>img {
   align-items: center;
   display: flexbox;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
+
 .carousel__slide:nth-child(even) {
   background-color: transparent;
 }
+
 .carousel__slide:before {
   position: absolute;
   top: 50%;
@@ -170,6 +188,7 @@ li {
   color: #a4a4a4;
   font-size: 2em;
 }
+
 .carousel__snapper {
   position: absolute;
   top: 0;
@@ -178,6 +197,7 @@ li {
   height: 100%;
   scroll-snap-align: center;
 }
+
 @media (hover: hover) {
   .carousel__snapper {
     animation-name: tonext, snap;
@@ -185,19 +205,23 @@ li {
     animation-duration: 4s;
     animation-iteration-count: infinite;
   }
+
   .carousel__slide:last-child .carousel__snapper {
     animation-name: tostart, snap;
   }
 }
+
 @media (prefers-reduced-motion: reduce) {
   .carousel__snapper {
     animation-name: none;
   }
 }
+
 .carousel:hover .carousel__snapper,
 .carousel:focus-within .carousel__snapper {
   animation-name: none;
 }
+
 .carousel__navigation {
   position: absolute;
   right: 0;
@@ -205,10 +229,12 @@ li {
   left: 0;
   text-align: center;
 }
+
 .carousel__navigation-list,
 .carousel__navigation-item {
   display: inline-block;
 }
+
 .carousel__navigation-button {
   display: inline-block;
   width: 1.5rem;
@@ -220,6 +246,7 @@ li {
   font-size: 0;
   transition: transform 0.1s;
 }
+
 .carousel::before,
 .carousel::after,
 .carousel__prev,
@@ -234,14 +261,17 @@ li {
   font-size: 0;
   outline: 0;
 }
+
 .carousel::before,
 .carousel__prev {
   left: -1rem;
 }
+
 .carousel::after,
 .carousel__next {
   right: -1rem;
 }
+
 .carousel::before,
 .carousel::after {
   content: "";
@@ -256,31 +286,40 @@ li {
   text-align: center;
   pointer-events: none;
 }
+
 .carousel::before {
   background-image: url("../img/arrowLeft.svg");
 }
+
 .carousel::after {
   background-image: url("../img/arrowRight.svg");
 }
+
 @media (max-width: 359px) {
   .titulo h1 {
     font-size: 30px;
   }
+
   .text h2 {
     font-size: 30px;
   }
+
   .prog {
     height: 5px;
   }
+
   .load .p1 {
     font-size: 12px;
   }
+
   .load .p2 {
     font-size: 14px;
   }
+
   .image img {
     width: 60%;
   }
+
   .i2,
   .i3,
   .i4,
@@ -289,68 +328,86 @@ li {
     display: none;
   }
 }
+
 @media (min-width: 1200px) {
   .titulo h1 {
     font-size: 32px;
     margin-top: 5px;
   }
+
   .linha {
     margin-top: 5px;
   }
+
   .text h2 {
     font-size: 32px;
   }
+
   .image {
     margin: 0px;
     margin-top: -30px;
   }
+
   .image img {
     width: 50%;
   }
+
   .right-container {
     position: relative;
     margin-top: -30px;
   }
 }
+
 /*Carroussel*/
 @keyframes tonext {
   75% {
     left: 0;
   }
+
   95% {
     left: 100%;
   }
+
   98% {
     left: 100%;
   }
+
   99% {
     left: 0;
   }
 }
+
 @keyframes tostart {
   75% {
     left: 0;
   }
+
   95% {
     left: -500%;
   }
+
   98% {
     left: -500%;
   }
+
   99% {
     left: 0;
   }
 }
+
 @keyframes snap {
   96% {
     scroll-snap-align: center;
   }
+
   97% {
     scroll-snap-align: none;
   }
+
   99% {
     scroll-snap-align: none;
   }
+
   100% {
     scroll-snap-align: center;
   }
@@ -403,10 +460,10 @@ li {
   padding: 0;
 }
 
-.footer-container > footer {
+.footer-container>footer {
   display: flex;
   background-color: #70cbcb;
-  height: 380px;
+  height: 300px;
 }
 
 #minimal-logo {
@@ -425,12 +482,12 @@ li {
   padding: 100px 20px 0px 0px;
 }
 
-.footer-contacts-info > img {
+.footer-contacts-info>img {
   width: 40px;
   padding: 15px 20px 0px 0px;
 }
 
-.footer-contacts-info > label {
+.footer-contacts-info>label {
   font-size: 20px;
   color: #f0ffff;
   text-shadow: none;
@@ -442,8 +499,8 @@ li {
 }
 
 .footer-social-a-icons img {
-  width: 50px;
-  padding: 10px 20px 0px 0px;
+  width: 80px;
+  padding: 10px 10px 0px 20px;
 }
 
 #footer-end-line {
@@ -460,6 +517,7 @@ li {
 #footer-end-line a {
   text-decoration: none;
 }
+
 :hover#footer-end-line a {
   text-decoration: none;
   color: #ffffff;
