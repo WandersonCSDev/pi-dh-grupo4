@@ -5,13 +5,17 @@
 * {
   font-family: "Source Sans 3", sans-serif;
   font-family: "Source Sans Pro", sans-serif;
+
   margin: 0;
+
+
 }
 
 .header-container > header {
   display: flex;
   width: 100%;
   height: 270px;
+  margin: 5px;
   background-color: #70cbcb;
 }
 
@@ -22,6 +26,7 @@
 }
 .header-nav-bar {
   padding: 180px 30px 30px 50px;
+  padding: 180px 60px 60px;
   font-size: 28px;
 }
 .header-nav-bar {
@@ -35,6 +40,7 @@
 
 #header-myItens {
   padding: 80px 70px 0px;
+  padding: 80px 80px 0px;
 }
 
 #header-myItens > img {
@@ -44,11 +50,13 @@
 #header-myItens > a {
   color: #f0ffff;
   font-size: 28px;
+  text-align: end;
   text-decoration: none;
 }
 
 #header-login {
   padding: 93px 0px 0px 80px;
+  padding: 90px 100px 0px;
 }
 
 #header-login > img {
