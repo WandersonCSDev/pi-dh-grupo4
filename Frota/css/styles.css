@@ -108,15 +108,69 @@ body {
   border-radius: 20px;
 }
 
+/*MAIN*/
 .frota-main-container {
   width: 100%;
-  height: 60%;
+  background-color: #f4decd;
+
 }
 
-.frota-main-container div {
-  background-color: #ec7474;
-  font-size: 100px;
+.frota-main-container section {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
 }
+
+.frota {
+  align-items: center;
+  justify-content: center;
+}
+
+.frota h1 {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-left: 25%;
+  margin: 40px 0 10px 25%;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 30px;
+  text-align: center;
+  border-radius: 10px;
+  width: 50%;
+  height: 8vh;
+  background-color: #70cbcb;
+  color: #f0ffff;
+  text-shadow: 1px 3px 5px black;
+}
+
+.motos-da-frota {
+  display: flex;
+  padding: 0 0 0 15%;
+
+}
+
+.motos-da-frota div {
+  display: inline-block;
+  width: 160px;
+  flex-direction: column;
+  background-color: #70cbcb;
+  margin: 25px 25px 25px 25px;
+  padding: 5px 5px 5px 5px;
+  border-radius: 10px;
+  text-align: center;
+  color: #f0ffff;
+  text-shadow: 1px 2px 3px black;
+}
+
+.motos-da-frota span {
+
+  font-size: 14px;
+
+}
+
+
 
 /*================FOOTER======================*/
 
@@ -159,13 +213,15 @@ body {
 }
 
 .footer-social-a-icons {
-  padding: 50px 10px 0px 90px;
+  display: flex;
   flex-wrap: nowrap;
 }
 
 .footer-social-a-icons img {
-  width: 50px;
-  padding: 10px 10px 0px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 50px 8px 0 8px;
 }
 
 .footer-container hr {
