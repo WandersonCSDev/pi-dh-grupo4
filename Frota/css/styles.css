@@ -158,11 +158,13 @@ body {
   text-shadow: 1px 2px 3px black;
 }
 
+/*Acessórios*/
+
 .frota-acessorios {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 12vw;
+  margin-left: 15vw;
 }
 
 .frota-acessorios h1 {
@@ -171,7 +173,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  margin: 40px 0 10px -5vw;
+  margin: 40px 0 10px -15vw;
   font-family: "Source Sans Pro", sans-serif;
   font-size: 30px;
   text-align: center;
