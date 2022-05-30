@@ -117,10 +117,13 @@ body {
 
 /*imagem predio*/
 .predio {
-    margin-top: 110px;
-    margin-left: 170px;
+    margin: 0;
 }
 
+.predio > img {
+    width: 100%;
+    padding-top: 100px;
+}
 /*FOOTER*/
 * {
     font-family: "Source Sans 3", sans-serif;
