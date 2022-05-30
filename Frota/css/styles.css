@@ -164,6 +164,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: auto;
   margin-left: 15vw;
 }
 
@@ -173,12 +174,12 @@ body {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  margin: 40px 0 10px -15vw;
+  margin: 40px 0 10px -12vw;
   font-family: "Source Sans Pro", sans-serif;
   font-size: 30px;
   text-align: center;
   border-radius: 10px;
-  width: 40vw;
+  width: 30vw;
   height: 8vh;
   background-color: #70cbcb;
   color: #f0ffff;
@@ -206,7 +207,7 @@ body {
 
 .acessorios div {
   background-color: #70cbcb;
-  margin: 0px 40px 0px 20px;
+  margin: 0px 40px 0px 40px;
   padding: 2px 2px 2px 2px;
   width: 150px;
   height: 150px;
