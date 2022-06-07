@@ -1,0 +1,24 @@
+{
+  "name": "u-scooter",
+  "version": "1.0.0",
+  "description": "\"u-scooter - Projeto integrador curso Full Stack Dev Digital House - Felipe - João Miguel - Larissa - Mayara - Wanderson\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WandersonCSDev/pi-dh-grupo4.git"
+  },
+  "keywords": [
+    "\"digital-house\"",
+    "\"projeto",
+    "integrador\""
+  ],
+  "author": "\"Wanderson - Mayara - Felipe - João Miguel - Larissa\"",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WandersonCSDev/pi-dh-grupo4/issues"
+  },
+  "homepage": "https://github.com/WandersonCSDev/pi-dh-grupo4#readme"
+}
