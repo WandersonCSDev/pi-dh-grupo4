@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro Cliente</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <div class="header-container">
+      <header>
+        <div class="header-img-logo">
+          <img
+            src="../img/u-scooterlogo.svg"
+            width="360px"
+            alt="U-SCOOTER logotipo"
+          />
+        </div>
+        <div class="header-nav-bar">
+          <nav>
+            <a href="#">Home</a>
+            <a href="#">Quem somos</a>
+            <a href="#">Como funciona</a>
+            <a href="#">Contato</a>
+          </nav>
+        </div>
+        <div id="header-myItens">
+          <img src="../img/Sacola.svg" alt="" /> <br />
+          <a href="#">Meus Itens</a>
+        </div>
+        <div id="header-login">
+          <img src="../img/login.svg" alt="" /> <br />
+          <a href="#">Login</a>
+        </div>
+      </header>
+    </div>
+    <!----------------------------CADASTRO-MAIN----------------------------->
+    <main>
+      <div>
+        <h1>CADASTRO</h1>
+      </div>
+      <div class="form-cadastro-option">
+          <label class="radio-inline"
+            ><input
+              type="radio"
+              name="optradio"
+              value="juridica"
+              onclick="pessoa(this.value);"
+            />Pessoa Juridica</label
+          >
+          <label class="radio-inline"
+            ><input
+              type="radio"
+              name="optradio"
+              value="fisica"
+              onclick="pessoa(this.value);"
+            />Pessoa Fisica</label
+          >
+        </p>
+      </div>
+      <div class="cad-cliente-forms">
+        <form id="juridica" style="display: none">
+          <table border="0">
+            <tr>
+              <td>
+                <label class="control-label col-sm-2" for="txtRazaosocial"
+                  >Razão Social:
+                </label>
+              </td>
+              <td>
+                <label class="control-label" for="txtNomefantasia"
+                  >Nome Fantasia:
+                </label>
+              </td>
+              <td>
+                <label class="control-label" for="txtIe">I.E.: </label>
+              </td>
+              <td>
+                <label class="control-label" for="txtCnpj">CNPJ: </label>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="txtRazaosocial"
+                  name="txtRazaosocial"
+                  required
+                />
+              </td>
+              <td>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="txtNomefantasia"
+                  required
+                  name="txtNomefantasia"
+                />
+              </td>
+              <td>
+                <input
+                  type="text"
+                  class="form-control cnpj"
+                  id="txtCnpj"
+                  name="txtCnpj"
+                  required
+                />
+              </td>
+              <td>
+                <input
+                  type="text"
+                  class="form-control ie"
+                  id="txtIe"
+                  name="txtIe"
+                  required
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label class="control-label" for="SelStatusFuncionalPJ"
+                  >Situação de Funcionamento</label
+                >
+              </td>
+              <td>
+                <label class="control-label" for="txtEmailPJ">E-mail: </label>
+              </td>
+              <td><label class="control-label" for="txtCepPJ">CEP: </label></td>
+              <td>
+                <label class="control-label" for="txtEnderecoPJ"
+                  >Endereço:</label
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <select
+                  class="form-control"
+                  id="SelStatusFuncionalPJ"
+                  required
+                  name="SelStatusFuncionalPJ"
+                >
+                  <option value="Installing">Em instalação</option>
+                  <option value="Operational">Em Operação</option>
+                </select>
+              </td>
+              <td>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="txtEmailPJ"
+                  required
+                  name="txtEmailPJ"
+                />
+              </td>
+              <td>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="txtCepPJ"
+                  required
+                  name="txtCepPJ"
+                />
+              </td>
+              <td>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="txtEnderecoPJ"
+                  required
+                  name="txtEnderecoPJ"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label class="control-label" for="txtNumeroPJ">Número: </label>
+              </td>
+              <td>
+                <label class="control-label" for="txtComplementoPJ"
+                  >Complemento:
+                </label>
+              </td>
+              <td>
+                <label class="control-label" for="selUfPJ"
+                  >UF (Domicílio Fiscal):
+                </label>
+              </td>
+              <td>
+                <label class="control-label" for="txtTelefone1lPJ"
+                  >Telefone 1:
+                </label>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="txtNumeroPJ"
+                  required
+                  name="txtNumeroPJ"
+                />
+              </td>
+              <td>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="txtComplementoPJ"
+                  required
+                  name="txtComplementoPJ"
+                />
+              </td>
+              <td>
+                <select
+                  class="form-control"
+                  id="txtUfPJ"
+                  required
+                  name="SelUfPJ"
+                >
+                  <option>AC</option>
+                  <option>AL</option>
+                  <option>AP</option>
+                  <option>AM</option>
+                  <option>BA</option>
+                  <option>CE</option>
+                  <option>DF</option>
+                  <option>ES</option>
+                  <option>GO</option>
+                  <option>MA</option>
+                  <option>MT</option>
+                  <option>MS</option>
+                  <option>MG</option>
+                  <option>PA</option>
+                  <option>PB</option>
+                  <option>PR</option>
+                  <option>PE</option>
+                  <option>PI</option>
+                  <option>RJ</option>
+                  <option>RN</option>
+                  <option>RS</option>
+                  <option>RO</option>
+                  <option>RR</option>
+                  <option>SC</option>
+                  <option>SP</option>
+                  <option>SE</option>
+                  <option>TO</option>
+                </select>
+              </td>
+              <td>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="txtTelefone1lPJ"
+                  required
+                  name="txtTelefone1lPJ"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label class="control-label" for="txtTelefone2PJ"
+                  >Telefone 2:
+                </label>
+              </td>
+              <td>
+                <label class="control-label" for="txtCelularPJ"
+                  >Celular:
+                </label>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="txtTelefone2PJ"
+                  required
+                  name="txtTelefone2PJ"
+                />
+              </td>
+              <td>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="txtCelularPJ"
+                  required
+                  name="txtCelularPJ"
+                />
+              </td>
+            </tr>
+          </table>
+          <div class="cadastro-PJ-buttons">
+            <button type="submit" name="enviarPJ">ENVIAR</button>
+            <button type="reset" name="limparPJ">LIMPAR</button>
+            <button type="button" name="voltarPJ">VOLTAR</button>
+            <button type="button" name="ajudaPJ">AJUDA</button>
+          </div>
+        </form>
+
+        <form id="fisica" style="display: none">
+          <table border="0">
+            <tr>
+              <td>
+                <label class="control-label" for="txtNomePF">Nome: </label>
+              </td>
+              <td><label class="control-label" for="txtCPF">CPF: </label></td>
+              <td><label class="control-label" for="txtRG">RG: </label></td>
+              <td>
+                <label class="control-label" for="txtSexoPF">Sexo: </label>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="txtNomePF"
+                  required
+                  name="txtNomePF"
+                />
+              </td>
+              <td>
+                <input
+                  type="text"
+                  class="form-control cpf"
+                  id="txtCPF"
+                  name="txtCPF"
+                  required
+                />
+              </td>
+              <td>
+                <input
+                  type="text"
+                  class="form-control rg"
+                  id="txtRG"
+                  name="txtRG"
+                  onkeypress="return SomenteNumero(event)"
+                  required
+                />
+              </td>
+              <td>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="txtSexoPF"
+                  required
+                  name="txtSexoPF"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label class="control-label" for="txtDataNascPF"
+                  >Data de Nascimento:</label
+                >
+              </td>
+              <td>
+                <label class="control-label" for="txtEstCivilPF"
+                  >Estado Civil:</label
+                >
+              </td>
+              <td>
+                <label class="control-label" for="txtNacionalidadePF"
+                  >Nacionalidade:</label
+                >
+              </td>
+              <td>
+                <label class="control-label" for="txtNaturalidadePF"
+                  >Naturalidade:</label
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="txtDataNascPF"
+                  required
+                  name="txtDataNascPF"
+                />
+              </td>
+              <td>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="txtEstCivilPF"
+                  required
+                  name="txtEstCivilPF"
+                />
+              </td>
+              <td>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="txtNacionalidadePF"
+                  required
+                  name="txtNacionalidadePF"
+                />
+              </td>
+              <td>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="txtNaturaliadePF"
+                  required
+                  name="txtNaturalidadePF"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td><label class="control-label" for="SelUfPF">UF: </label></td>
+              <td>
+                <label class="control-label" for="txtNomeDoPaiPF"
+                  >Nome do Pai:</label
+                >
+              </td>
+              <td>
+                <label class="control-label" for="txtNomeDaMaePF"
+                  >Nome da Mãe:</label
+                >
+              </td>
+              <td><label class="control-label" for="txtCepPF">CEP: </label></td>
+            </tr>
+            <tr>
+              <td>
+                <select
+                  class="form-control"
+                  id="txtUfPF"
+                  required
+                  name="txtUfPF"
+                >
+                  <option>AC</option>
+                  <option>AL</option>
+                  <option>AP</option>
+                  <option>AM</option>
+                  <option>BA</option>
+                  <option>CE</option>
+                  <option>DF</option>
+                  <option>ES</option>
+                  <option>GO</option>
+                  <option>MA</option>
+                  <option>MT</option>
+                  <option>MS</option>
+                  <option>MG</option>
+                  <option>PA</option>
+                  <option>PB</option>
+                  <option>PR</option>
+                  <option>PE</option>
+                  <option>PI</option>
+                  <option>RJ</option>
+                  <option>RN</option>
+                  <option>RS</option>
+                  <option>RO</option>
+                  <option>RR</option>
+                  <option>SC</option>
+                  <option>SP</option>
+                  <option>SE</option>
+                  <option>TO</option>
+                </select>
+              </td>
+              <td>
+                <input type="text" 
+                class="form-control" 
+                id="txtNomeDoPai" 
+                required 
+                name="txtNomeDoPai">
+              </td>
+              <td>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="txtNomeDaMaePF"
+                  required
+                  name="txtNomeDaMaePF"
+                />
+              </td>
+              <td>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="txtCpfPF"
+                  required
+                  name="txtCepPF"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label class="control-label" for="txtEnderecoPF"
+                  >Endereço:</label
+                >
+              </td>
+              <td>
+                <label class="control-label" for="txtNumeroPF">Número: </label>
+              </td>
+              <td>
+                <label class="control-label" for="txtComplementoPF"
+                  >Complemento:</label
+                >
+              </td>
+              <td>
+                <label class="control-label" for="txtEmailPF">E-mail: </label>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="txtEnderecoPF"
+                  required
+                  name="txtEnderecoPF"
+                />
+              </td>
+              <td>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="txtNumeroPF"
+                  required
+                  name="txtNumeroPF"
+                />
+              </td>
+              <td>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="txtComplementoPF"
+                  required
+                  name="txtComplementoPF"
+                />
+              </td>
+              <td>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="txtEmailPF"
+                  required
+                  name="txtEmailPF"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label class="control-label" for="txtTelefonePF"
+                  >Telefone:</label
+                >
+              </td>
+              <td>
+                <label class="control-label" for="txtCelularPF"
+                  >Celular:
+                </label>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="txtTelefonePF"
+                  required
+                  name="txtTelefonePF"
+                />
+              </td>
+              <td>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="txtCelularPF"
+                  required
+                  name="txtCelularPF"
+                />
+              </td>
+            </tr>
+          </table>
+          <div class="cadastro-PF-buttons">
+            <button type="submit" name="enviaPF">ENVIAR</button>
+            <button type="reset" name="limparPF">LIMPAR</button>
+            <button type="button" name="voltarPF">VOLTAR</button>
+            <button type="button" name="ajudaPF">AJUDA</button>
+          </div>
+        </form>
+      </div>
+    </main>
+    <!--================================FOOTER=================================-->
+    <div class="footer-content fixed-bottom">
+      <div class="footer-container">
+        <footer>
+          <div class="footer-logo-div">
+            <a href="#"
+              ><img
+                id="minimal-logo"
+                src="../img/minimal-logo.svg"
+                alt="minimal-logo"
+            /></a>
+          </div>
+          <div class="footer-contacts-info">
+            <label id="Nossos-contatos">Nossos Contatos</label>
+            <br />
+            <img src="../img/Contact Call.svg" alt="contact Call icon" />
+            <label>(11) 2404-4856</label> <br />
+            <img src="../img/Contact Mail.svg" alt="" />
+            <label>contato@u-scooter.com</label> <br />
+            <img src="../img/Location.svg" alt="" />
+            <label
+              >Avenida das Bromélias, 960 - Moema - São Paulo - 07196-015</label
+            >
+            <br />
+          </div>
+          <div class="footer-social-a-icons">
+            <a href="https://facebook.com"
+              ><img src="../img/Facebook (1).svg" alt="facebook icon"
+            /></a>
+            <a href="https://instagram.com"
+              ><img src="../img/Instagram (1).svg" alt="instagram icon"
+            /></a>
+            <a href="https://web.whatsapp.com/"
+              ><img src="../img/Whatsapp (1).svg" alt=""
+            /></a>
+          </div>
+        </footer>
+      </div>
+      <div id="footer-end-line">
+        <p>
+          ® U-SCOOTER – Todos os direitos reservados.
+          <a id="footer-end-line-a" href="#">www.u-scooter.com.br</a>
+        </p>
+      </div>
+    </div>
+  </body>
+  <script>
+    function pessoa(tipo) {
+      if (tipo == "fisica") {
+        document.getElementById("fisica").style.display = "inline";
+        document.getElementById("juridica").style.display = "none";
+      } else if (tipo == "juridica") {
+        document.getElementById("fisica").style.display = "none";
+        document.getElementById("juridica").style.display = "inline";
+      }
+    }
+  </script>
+</html>

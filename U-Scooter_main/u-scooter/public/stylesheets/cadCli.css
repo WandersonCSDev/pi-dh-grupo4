@@ -1,0 +1,316 @@
+/*FONTES*/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Source+Sans+Pro:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Source+Sans+3:wght@400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Source Sans 3", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+/*ESTILOS GERAIS*/
+body {
+  background: #f4decd;
+}
+
+/*HEADER*/
+.header-container {
+  height: 270px;
+  margin: 0 0 0 0;
+}
+
+.header-container>header {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  background-color: #70cbcb;
+}
+
+.header-img-logo {
+  position: relative;
+  width: 200px;
+  top: 40px;
+  left: 10px;
+}
+
+.header-nav-bar {
+  position: relative;
+  padding: 180px 40px 60px;
+  font-size: 20px;
+  margin-left: 100px;
+  margin-top: 40px;
+}
+
+.header-nav-bar {
+  justify-content: space-around;
+}
+
+.header-nav-bar>nav>a {
+  color: #f0ffff;
+  text-decoration: none;
+  font-size: larger;
+  text-shadow: 5px 5px 5px black;
+  padding: 0px 20px 20px;
+}
+
+#header-myItens {
+  padding: 50px 40px 40px 0px;
+}
+
+#header-myItens>img {
+  width: 50px;
+  margin-left: 30px;
+  margin-top: 118px;
+}
+
+#header-myItens>a {
+  color: #f0ffff;
+  font-size: 22px;
+  text-align: left;
+  margin-left: 10px;
+  text-shadow: 5px 5px 5px black;
+  text-decoration: none;
+}
+
+#header-login {
+  padding: 50px 30px 0px;
+}
+
+#header-login>img {
+  width: 40px;
+  margin: 125px 0 0 30px;
+}
+
+#header-login>a {
+  color: #f0ffff;
+  font-size: 22px;
+  margin-left: 22px;
+  text-decoration: none;
+  text-shadow: 5px 5px 5px black;
+}
+
+/*CADASTRO*/
+
+main {
+  margin: 5% 0 5% 0;
+}
+
+main h1 {
+  text-align: center;
+  background-color: #70cbcb;
+  width: 40%;
+  color: #f0ffff;
+  text-shadow: 3px 3px 5px black;
+  border-radius: 10px;
+}
+
+.form-cadastro-option {
+  margin: 3% 15% 0% 15%;
+}
+
+.radio-inline {
+  padding-right: 40px;
+}
+
+.cad-cliente-forms {
+  margin: 0 10% 0 10%;
+  background-color: #70cbcb;
+  width: 63%;
+  border-radius: 10px;
+}
+
+table {
+  margin: 5%;
+  color: #f0ffff;
+  text-shadow: 1px 2px 3px black;
+}
+
+td {
+  padding: 3px;
+}
+
+input {
+  font-size: 14px;
+  border: none;
+  border-radius: 3px;
+}
+
+.cadastro-PF-buttons button {
+  width: 100px;
+  height: 25px;
+  background-color: #70cbcb;
+  border: none;
+  box-shadow: 3px 3px 5px #000000;
+  text-shadow: ;
+  font-size: larger;
+  color: #f0ffff;
+}
+
+.cadastro-PJ-buttons button {
+  width: 100px;
+  height: 25px;
+  background-color: #70cbcb;
+  border: none;
+  box-shadow: 3px 3px 5px #000000;
+  text-shadow: ;
+  font-size: larger;
+  color: #f0ffff;
+}
+
+.cadastro-PJ-buttons {
+  text-align: center;
+}
+
+.cadastro-PF-buttons {
+  text-align: center;
+}
+
+select {
+  font-size: 14px;
+  border: none;
+  border-radius: 3px;
+}
+
+/*FOOTER*/
+.footer.content {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-container>footer {
+  display: flexbox;
+  background-color: #70cbcb;
+  height: 380px;
+}
+
+.footer-logo-div {
+  margin: 0;
+}
+
+#minimal-logo {
+  padding: 30px 50px 10px 30px;
+  height: 100px;
+}
+
+#Nossos-contatos {
+  text-align: right;
+  font-size: 28px;
+  font-weight: 600;
+  color: #f0ffff;
+}
+
+.footer-contacts-info {
+  padding: 100px 20px 0px 0px;
+}
+
+.footer-contacts-info>img {
+  width: 40px;
+  padding: 15px 20px 0px 0px;
+}
+
+.footer-contacts-info>label {
+  font-size: 20px;
+  color: #f0ffff;
+  text-shadow: none;
+}
+
+.footer-social-a-icons {
+  padding: 50px 10px 0px 90px;
+  flex-wrap: nowrap;
+}
+
+.footer-social-a-icons img {
+  width: 150px;
+  padding: 10px 20px 0px 0px;
+}
+
+#footer-end-line {
+  width: 100%;
+  height: 60px;
+  background-color: #70cbcb;
+  border-top: solid 3px #f0ffff;
+  text-align: center;
+  color: #f0ffff;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+#footer-end-line a {
+  text-decoration: none;
+}
+
+:hover#footer-end-line a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.footer.content {
+  position: fixed;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-container>footer {
+  display: flex;
+  background-color: #70cbcb;
+  height: 380px;
+}
+
+#minimal-logo {
+  padding: 30px 50px 10px 20px;
+  height: 100px;
+}
+
+#Nossos-contatos {
+  text-align: right;
+  font-size: 28px;
+  font-weight: 600;
+  color: #f0ffff;
+}
+
+.footer-contacts-info {
+  padding: 100px 20px 0px 0px;
+}
+
+.footer-contacts-info>img {
+  width: 40px;
+  padding: 15px 20px 0px 0px;
+}
+
+.footer-contacts-info>label {
+  font-size: 20px;
+  color: #f0ffff;
+  text-shadow: none;
+}
+
+.footer-social-a-icons {
+  padding: 50px 10px 0px 90px;
+}
+
+.footer-social-a-icons img {
+  width: 50px;
+  padding: 10px 20px 0px 0px;
+}
+
+#footer-end-line {
+  width: 100%;
+  height: 60px;
+  background-color: #70cbcb;
+  border-top: solid 3px #f0ffff;
+  text-align: center;
+  color: #f0ffff;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+#footer-end-line a {
+  text-decoration: none;
+}
+
+:hover#footer-end-line a {
+  text-decoration: none;
+  color: #ffffff;
+}
