@@ -1,0 +1,7 @@
+{
+  "name": "u-scooter",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "custom"
+}
