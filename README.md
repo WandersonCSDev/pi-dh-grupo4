@@ -8,6 +8,6 @@ fósseis, dimiuindo a emissão de CO², reduzindo a poluição atmosférica.</p>
 
 <h3># Integrantes da Equipe 04:</h3>
 <nav> 
-           Mayara Cristina --
-           Wanderson
+*Wanderson
+*Mayara
   </nav>
