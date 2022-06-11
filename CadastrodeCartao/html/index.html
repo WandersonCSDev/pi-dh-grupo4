@@ -11,89 +11,88 @@
     </head>
     <body>
         <!-- ============================ HEADER  ================================================= -->
+
         <div class="header-container">
-            <header>
+            <header class="header">
                 <div class="header-img-logo">
                     <img
-                        src="../img/u-scooterlogo.svg"
-                        width="360px"
+                        src="../img/logo_U-scooter_.svg"
+                        width="460px"
                         alt="U-SCOOTER logotipo"
                     />
                 </div>
                 <div class="header-nav-bar">
                     <nav>
                         <a href="#">Home</a>
-                        <a href="#">Quem somos</a>
-                        <a href="#">Como funciona</a>
-                        <a href="#">Contato</a>
+                        <a href="#">Show room</a>
+                        <a href="#">Contatos</a>
+                        <a href="#">Sobre nós</a>
                     </nav>
                 </div>
-                <div id="header-myItens">
-                    <img src="../img/myItens.svg" alt="" /> <br />
-                    <a href="#">Meus Itens</a>
-                </div>
-                <div id="header-login">
-                    <img src="../img/login.svg" alt="" /> <br />
-                    <a href="#">Login</a>
+                <div class="header-left-itens-login">
+                    <div id="header-myItens">
+                        <img src="../img/myItens.svg" alt="" /> <br />
+                        <a href="#">Meus Itens</a>
+                    </div>
+                    <div id="header-login">
+                        <img src="../img/login.svg" alt="" /> <br />
+                        <a href="#">Entrar</a>
+                    </div>
                 </div>
             </header>
         </div>
-        <!--====================================CADASTRO CARTÃO====================================================-->
-        <div class="cadastro-cartao">
-            <img src="../img/Caixa Quem Somos.svg" alt="" />
-            <h1 class="cadastrocartaoh1">CADASTRO DE CARTÃO</h1>
-        </div>
 
         <!--===================================conteúdo quadro meio=================================================-->
-        <div class="cadastro-cartao-form">
-            <form>
-                <div class="nome1">
-                    <label>Nome para o Cartão</label>
-                    <br />
-                    <input type="text" placeholder="Dê um nome a este cartão" />
-                </div>
+        <main>
+            <div class="cadastro-cartao-form">
+                <form>
+                    <div class="nome1">
+                        <label>Nome para o Cartão</label>
+                        <br />
+                        <input
+                            type="text"
+                            placeholder="Dê um nome a este cartão"
+                        />
+                    </div>
 
-                <div class="numero">
-                    <label>Número do Cartão</label>
-                    <br />
-                    <input
-                        type="text"
-                        placeholder="Números sem espaços ou hífen"
-                    />
-                </div>
+                    <div class="numero">
+                        <label>Número do Cartão</label>
+                        <br />
+                        <input
+                            type="text"
+                            placeholder="Números sem espaços ou hífen"
+                        />
+                    </div>
 
-                <div class="nome2">
-                    <label>Nome Impresso no Cartão</label>
-                    <br />
-                    <input type="text" placeholder="Nome impresso no cartão" />
-                </div>
+                    <div class="nome2">
+                        <label>Nome Impresso no Cartão</label>
+                        <br />
+                        <input
+                            type="text"
+                            placeholder="Nome impresso no cartão"
+                        />
+                    </div>
 
-                <div class="validade">
-                    <label>Data de Validade</label>
-                    <br />
-                    <input type="date" />
-                </div>
+                    <div class="validade">
+                        <label>Data de Validade</label>
+                        <br />
+                        <input type="date" />
+                    </div>
 
-                <div class="seguranca">
-                    <label>Código de Segurança</label>
-                    <br />
-                    <input type="text" placeholder="CVV" />
-                </div>
-            </form>
-        </div>
-        <!--====================================Botão Salvar=========================================================-->
-        <div class="cad-cartao-buttons">
-            <button type="submit">Enviar</button>
-            <button type="reset">Limpar</button>
-        </div>
-        <!--====================================imagem creditcard====================================================-->
-        <div class="imagem-cartao">
-            <img src="../img/Hands - Creditcard 1.svg" alt="" />
-        </div>
-        <!--====================================imagem predio========================================================-->
-        <div class="predio">
-            <img src="../img/Cityscapes - Town.svg" alt="" />
-        </div>
+                    <div class="seguranca">
+                        <label>Código de Segurança</label>
+                        <br />
+                        <input type="text" placeholder="CVV" />
+                    </div>
+                </form>
+            </div>
+
+            <!--====================================Botão Salvar=========================================================-->
+            <div class="cad-cartao-buttons">
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpar</button>
+            </div>
+        </main>
         <!--====================================FOOTER===============================================================-->
         <div class="footer-content fixed-bottom">
             <div class="footer-container">
@@ -125,20 +124,21 @@
                     </div>
                     <div class="footer-social-a-icons">
                         <a href="https://facebook.com"
-                            ><img src="../img/Facebook.svg" alt="facebook icon"
+                            ><img src="../img/facebook.svg" alt="facebook icon"
                         /></a>
                         <a href="https://instagram.com"
                             ><img
-                                src="../img/Instagram.svg"
+                                src="../img/instagram.svg"
                                 alt="instagram icon"
                         /></a>
                         <a href="https://web.whatsapp.com/"
-                            ><img src="../img/Whatsapp.svg" alt=""
+                            ><img src="../img/whatsapp.svg" alt=""
                         /></a>
                     </div>
                 </footer>
             </div>
             <div id="footer-end-line">
+                <hr id="linha" />
                 <p>
                     ® U-SCOOTER – Todos os direitos reservados.
                     <a id="footer-end-line-a" href="#">www.u-scooter.com.br</a>
