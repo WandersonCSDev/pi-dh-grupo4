@@ -1,140 +1,152 @@
 <!DOCTYPE html>
 <html lang="pt-pt">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>U-SCOOTER</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>U-SCOOTER</title>
 
-    <!-------------------------------Estilos CSS------------------------------------------------>
-    <link rel="stylesheet" href="../css/style.css" />
-  </head>
-  <body>
-    <!-- ============================ HEADER  ================================================= -->
-    <div class="header-container">
-      <header>
-        <div class="header-img-logo">
-          <img
-            src="../img/u-scooterlogo.svg"
-            width="360px"
-            alt="U-SCOOTER logotipo"
-          />
+        <!-------------------------------Estilos CSS------------------------------------------------>
+        <link rel="stylesheet" href="../css/style.css" />
+    </head>
+    <body>
+        <!-- ============================ HEADER  ================================================= -->
+        <div class="header-container">
+            <header>
+                <div class="header-img-logo">
+                    <img
+                        src="../img/u-scooterlogo.svg"
+                        width="360px"
+                        alt="U-SCOOTER logotipo"
+                    />
+                </div>
+                <div class="header-nav-bar">
+                    <nav>
+                        <a href="#">Home</a>
+                        <a href="#">Quem somos</a>
+                        <a href="#">Como funciona</a>
+                        <a href="#">Contato</a>
+                    </nav>
+                </div>
+                <div id="header-myItens">
+                    <img src="../img/myItens.svg" alt="" /> <br />
+                    <a href="#">Meus Itens</a>
+                </div>
+                <div id="header-login">
+                    <img src="../img/login.svg" alt="" /> <br />
+                    <a href="#">Login</a>
+                </div>
+            </header>
         </div>
-        <div class="header-nav-bar">
-          <nav>
-            <a href="#">Home</a>
-            <a href="#">Quem somos</a>
-            <a href="#">Como funciona</a>
-            <a href="#">Contato</a>
-          </nav>
-        </div>
-        <div id="header-myItens">
-          <img src="../img/Sacola.svg" alt="" /> <br />
-          <a href="#">Meus Itens</a>
-        </div>
-        <div id="header-login">
-          <img src="../img/login.svg" alt="" /> <br />
-          <a href="#">Login</a>
-        </div>
-      </header>
-    </div>
-    <!--====================================CADASTRO CARTÃO====================================================-->
-    <div class="cadastro-cartao">
-      <img src="../img/Caixa Quem Somos.svg" alt="" />
-      <h1 class="cadastrocartaoh1">CADASTRO DE CARTÃO</h1>
-    </div>
-
-    <!--===================================conteúdo quadro meio=================================================-->
-    <div class="cadastro-cartao-form">
-      <form>
-        <div class="nome1">
-          <label>Nome para o Cartão</label>
-          <br />
-          <input type="text" placeholder="Dê um nome a este cartão" />
+        <!--====================================CADASTRO CARTÃO====================================================-->
+        <div class="cadastro-cartao">
+            <img src="../img/Caixa Quem Somos.svg" alt="" />
+            <h1 class="cadastrocartaoh1">CADASTRO DE CARTÃO</h1>
         </div>
 
-        <div class="numero">
-          <label>Número do Cartão</label>
-          <br />
-          <input type="text" placeholder="Números sem espaços ou hífen" />
-        </div>
+        <!--===================================conteúdo quadro meio=================================================-->
+        <div class="cadastro-cartao-form">
+            <form>
+                <div class="nome1">
+                    <label>Nome para o Cartão</label>
+                    <br />
+                    <input type="text" placeholder="Dê um nome a este cartão" />
+                </div>
 
-        <div class="nome2">
-          <label>Nome Impresso no Cartão</label>
-          <br />
-          <input type="text" placeholder="Nome impresso no cartão" />
-        </div>
+                <div class="numero">
+                    <label>Número do Cartão</label>
+                    <br />
+                    <input
+                        type="text"
+                        placeholder="Números sem espaços ou hífen"
+                    />
+                </div>
 
-        <div class="validade">
-          <label>Data de Validade</label>
-          <br />
-          <input type="date" />
-        </div>
+                <div class="nome2">
+                    <label>Nome Impresso no Cartão</label>
+                    <br />
+                    <input type="text" placeholder="Nome impresso no cartão" />
+                </div>
 
-        <div class="seguranca">
-          <label>Código de Segurança</label>
-          <br />
-          <input type="text" placeholder="CVV" />
+                <div class="validade">
+                    <label>Data de Validade</label>
+                    <br />
+                    <input type="date" />
+                </div>
+
+                <div class="seguranca">
+                    <label>Código de Segurança</label>
+                    <br />
+                    <input type="text" placeholder="CVV" />
+                </div>
+            </form>
         </div>
-      </form>
-    </div>
-    <!--====================================Botão Salvar=========================================================-->
-    <div class="cad-cartao-buttons">
-      <button type="submit">Enviar</button>
-      <button type="reset">Limpar</button>
-    </div>
-    <!--====================================imagem creditcard====================================================-->
-    <div class="imagem-cartao">
-      <img src="../img/Hands - Creditcard 1.svg" alt="" />
-    </div>
-    <!--====================================imagem predio========================================================-->
-    <div class="predio">
-      <img src="../img/Cityscapes - Town.svg" alt="" />
-    </div>
-    <!--====================================FOOTER===============================================================-->
-    <div class="footer-content fixed-bottom">
-      <div class="footer-container">
-        <footer>
-          <div>
-            <a href="#"
-              ><img
-                id="minimal-logo"
-                src="../img/minimal-logo.svg"
-                alt="minimal-logo"
-            /></a>
-          </div>
-          <div class="footer-contacts-info">
-            <label id="Nossos-contatos">Nossos Contatos</label> <br />
-            <img src="../img/Contact Call.svg" alt="contact Call icon" />
-            <label>(11) 2404-4856</label> <br />
-            <img src="../img/Contact Mail.svg" alt="" />
-            <label>contato@u-scooter.com</label> <br />
-            <img src="../img/Location.svg" alt="" />
-            <label
-              >Avenida das Bromélias, 960 - Moema - São Paulo - 07196-015</label
-            >
-            <br />
-          </div>
-          <div class="footer-social-a-icons">
-            <a href="https://facebook.com"
-              ><img src="../img/Facebook (1).svg" alt="facebook icon"
-            /></a>
-            <a href="https://instagram.com"
-              ><img src="../img/Instagram (1).svg" alt="instagram icon"
-            /></a>
-            <a href="https://web.whatsapp.com/"
-              ><img src="../img/Whatsapp (1).svg" alt=""
-            /></a>
-          </div>
-        </footer>
-      </div>
-      <div id="footer-end-line">
-        <p>
-          ® U-SCOOTER – Todos os direitos reservados.
-          <a id="footer-end-line-a" href="#">www.u-scooter.com.br</a>
-        </p>
-      </div>
-    </div>
-    <!-------------------FOOTER----------------------------------------------->
-  </body>
+        <!--====================================Botão Salvar=========================================================-->
+        <div class="cad-cartao-buttons">
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpar</button>
+        </div>
+        <!--====================================imagem creditcard====================================================-->
+        <div class="imagem-cartao">
+            <img src="../img/Hands - Creditcard 1.svg" alt="" />
+        </div>
+        <!--====================================imagem predio========================================================-->
+        <div class="predio">
+            <img src="../img/Cityscapes - Town.svg" alt="" />
+        </div>
+        <!--====================================FOOTER===============================================================-->
+        <div class="footer-content fixed-bottom">
+            <div class="footer-container">
+                <footer>
+                    <div>
+                        <a href="#"
+                            ><img
+                                id="minimal-logo"
+                                src="../img/minimal-logo.svg"
+                                alt="minimal-logo"
+                        /></a>
+                    </div>
+                    <div class="footer-contacts-info">
+                        <label id="Nossos-contatos">Nossos Contatos</label>
+                        <br />
+                        <img
+                            src="../img/Contact Call.svg"
+                            alt="contact Call icon"
+                        />
+                        <label>(11) 2404-4856</label> <br />
+                        <img src="../img/Contact Mail.svg" alt="" />
+                        <label>contato@u-scooter.com</label> <br />
+                        <img src="../img/Location.svg" alt="" />
+                        <label
+                            >Avenida das Bromélias, 960 - Moema - São Paulo -
+                            07196-015</label
+                        >
+                        <br />
+                    </div>
+                    <div class="footer-social-a-icons">
+                        <a href="https://facebook.com"
+                            ><img
+                                src="../img/Facebook (1).svg"
+                                alt="facebook icon"
+                        /></a>
+                        <a href="https://instagram.com"
+                            ><img
+                                src="../img/Instagram (1).svg"
+                                alt="instagram icon"
+                        /></a>
+                        <a href="https://web.whatsapp.com/"
+                            ><img src="../img/Whatsapp (1).svg" alt=""
+                        /></a>
+                    </div>
+                </footer>
+            </div>
+            <div id="footer-end-line">
+                <p>
+                    ® U-SCOOTER – Todos os direitos reservados.
+                    <a id="footer-end-line-a" href="#">www.u-scooter.com.br</a>
+                </p>
+            </div>
+        </div>
+        <!-------------------FOOTER----------------------------------------------->
+    </body>
 </html>
