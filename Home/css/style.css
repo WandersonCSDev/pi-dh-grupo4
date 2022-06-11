@@ -128,7 +128,6 @@ body {
 
 /* Carrousel */
 .box-carousel {
-  max-width: 100%;
   margin: 0 auto;
   padding: 0 0;
   padding-top: 5px;
@@ -422,63 +421,52 @@ li {
   margin-top: 10px;
 }
 
-/*PLANOS*/
-.home-planos-section {
-  display: flex;
-  position: relative;
+/*SECTION*/
+.section {
+  width: 50%;
+  height: 40vh;
+  margin: -20vh 0 10vh 20vw;
+  color: #f0ffff;
 }
 
-.profissional p {
-  font-family: "Source Sans 3";
-  font-weight: bold;
-  font-size: 42px;
-  width: 211px;
-  height: 57px;
-  margin-top: 30px;
+.section>h1 {
+  font-size: larger;
+  font-weight: 600;
 }
 
-/*IMAGEM PREDIOS*/
-.imagempredios {
-  width: 1078px;
-  height: 439.63px;
-  width: 100%;
-  margin-top: 200px;
-  background-image: url("../img/predioshome.svg");
+.section>p {
+  font-size: 28;
+
 }
+
 
 /*FOOTER*/
-* {
-  font-family: "Source Sans 3", sans-serif;
-  font-family: "Source Sans Pro", sans-serif;
-  margin: 0;
-}
-
 .footer.content {
   position: fixed;
   margin: 0;
   padding: 0;
+  padding: 0 0 0 0;
 }
 
 .footer-container>footer {
   display: flex;
-  background-color: #70cbcb;
-  height: 300px;
+  background-color: #6d89ed;
+  height: 380px;
 }
 
 #minimal-logo {
-  padding: 30px 50px 10px 10px;
-  height: 110px;
+  padding: 30px 30px 10px 10px;
 }
 
 #Nossos-contatos {
   text-align: right;
-  font-size: 28px;
+  font-size: 18px;
   font-weight: 600;
   color: #f0ffff;
 }
 
 .footer-contacts-info {
-  padding: 100px 20px 0px 0px;
+  padding: 100px 20px 0px 20px;
 }
 
 .footer-contacts-info>img {
@@ -487,31 +475,30 @@ li {
 }
 
 .footer-contacts-info>label {
-  font-size: 20px;
+  font-size: 14px;
   color: #f0ffff;
-  text-shadow: none;
 }
 
 .footer-social-a-icons {
-  padding: 50px 10px 0px 90px;
-  flex-wrap: nowrap;
+  padding: 50px 10px 0px 10px;
 }
 
 .footer-social-a-icons img {
-  width: 80px;
-  padding: 10px 10px 0px 20px;
+  width: 50px;
+  padding: 10px 20px 0px 0px;
 }
 
 #footer-end-line {
   width: 100%;
-  height: 60px;
-  background-color: #70cbcb;
-  border-top: solid 3px #f0ffff;
+  background-color: #6d89ed;
+  height: 8vh;
   text-align: center;
   color: #f0ffff;
   font-size: 22px;
   font-weight: 600;
 }
+
+
 
 #footer-end-line a {
   text-decoration: none;
