@@ -1,0 +1,6 @@
+{
+  "appId": "u.scooter",
+  "appName": "u-scooter",
+  "webDir": "www",
+  "bundledWebRuntime": false
+}

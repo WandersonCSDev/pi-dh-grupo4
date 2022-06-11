@@ -11,7 +11,9 @@
 /*ESTILOS GERAIS*/
 body {
   font-family: "Source Sans Pro", "Source Sans 3";
-  background: #f4decd;
+  background-image: url(/Home/img/job405-ploy-01c.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /*HEADER*/
@@ -21,8 +23,11 @@ body {
 }
 
 .header-container {
-  height: 270px;
+  height: 380px;
   margin: 0 0 0 0;
+  background-image: url(/Home/img/background-neon.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .header-container>header {
@@ -31,82 +36,78 @@ body {
   width: 100%;
   height: 100%;
   margin: 0px;
-  background-color: #70cbcb;
 }
 
 .header-img-logo {
   position: relative;
   width: 200px;
-  top: 40px;
-  left: 20px;
+  height: 50px;
+  top: 14vh;
+  left: 11vw;
 }
 
 .header-nav-bar {
   position: relative;
-  padding: 180px 40px 60px;
+  padding: 46vh 0vw 0vw;
   font-size: 20px;
-  margin-left: 100px;
-  margin-top: 40px;
+  margin-left: -8vw;
+  margin-right: 12vw;
 }
 
-.header-nav-bar {
-  justify-content: space-around;
-}
 
-.header-nav-bar>nav>a {
+.header-nav-bar a {
   color: #f0ffff;
   text-decoration: none;
   font-size: larger;
-  text-shadow: 1px 2px 3px #ec7474;
-  padding: 0px 20px 20px;
+  text-shadow: 1px 2px 3px #cdcef4;
+  padding: 0px 5vw 0px;
+}
+
+.header-left-itens-login {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5vw;
+  justify-content: center;
 }
 
 #header-myItens {
-  padding: 50px 40px 40px 0px;
+  position: relative;
+  align-items: center;
 }
 
 #header-myItens>img {
   width: 50px;
-  margin-left: 30px;
-  margin-top: 118px;
+  margin: 12vh 0 0 2vw;
 }
 
 #header-myItens>a {
   color: #f0ffff;
   font-size: 22px;
   text-align: left;
-  margin-left: 10px;
-  text-shadow: 1px 2px 3px #ec7474;
+  padding: 0 0 0 0;
+  margin: 10vh 0 0 0;
+  text-shadow: 1px 2px 3px #eccef4;
   text-decoration: none;
 }
 
 #header-login {
-  padding: 50px 30px 0px;
+  padding: 0vh 0vw 0vw;
 }
 
 #header-login>img {
   width: 40px;
-  margin: 125px 0 0 30px;
+  margin: 14vh 0 0 2vw;
 }
 
 #header-login>a {
   color: #f0ffff;
   font-size: 22px;
-  margin-left: 22px;
+  margin: 38vh 0 0 1.5vw;
   text-decoration: none;
-  text-shadow: 1px 2px 3px #ec7474;
+  text-shadow: 1px 2px 3px #eccef4;
 }
 
 /*BANNER*/
-* {
-  box-sizing: border-box;
-  border: 0;
-  outline: 0;
-  padding: 0;
-  margin: 0;
-  scrollbar-color: transparent transparent;
-  scrollbar-width: 0px;
-}
 
 *::-webkit-scrollbar {
   width: 0;
@@ -127,10 +128,9 @@ body {
 
 /* Carrousel */
 .box-carousel {
-  max-width: 100%;
   margin: 0 auto;
   padding: 0 0;
-  padding-top: 35px;
+  padding-top: 5px;
 }
 
 .carousel>ol,
@@ -146,7 +146,7 @@ li {
   position: relative;
   padding-top: 50%;
   filter: drop-shadow(0 0 10px #0003);
-  perspective: 600px;
+  perspective: 400px;
 }
 
 .carousel__viewport {
@@ -171,7 +171,7 @@ li {
 .carousel__slide>img {
   align-items: center;
   display: flexbox;
-  width: 100%;
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -223,10 +223,8 @@ li {
 }
 
 .carousel__navigation {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  position: relative;
+  top: -35vh;
   text-align: center;
 }
 
@@ -253,7 +251,7 @@ li {
 .carousel__next {
   position: absolute;
   top: 0;
-  margin-top: 25%;
+  margin-top: 30vh;
   width: 4rem;
   height: 4rem;
   transform: translateY(-50%);
@@ -264,19 +262,19 @@ li {
 
 .carousel::before,
 .carousel__prev {
-  left: -1rem;
+  left: 4rem;
 }
 
 .carousel::after,
 .carousel__next {
-  right: -1rem;
+  right: 4rem;
 }
 
 .carousel::before,
 .carousel::after {
   content: "";
   z-index: 1;
-  background-color: #333;
+  background-color: #f0f0;
   background-size: 1.5rem 1.5rem;
   background-repeat: no-repeat;
   background-position: center center;
@@ -358,7 +356,7 @@ li {
   }
 }
 
-/*Carroussel*/
+/*Carrousel*/
 @keyframes tonext {
   75% {
     left: 0;
@@ -423,63 +421,52 @@ li {
   margin-top: 10px;
 }
 
-/*PLANOS*/
-.home-planos-section {
-  display: flex;
-  position: relative;
+/*SECTION*/
+.section {
+  width: 50%;
+  height: 40vh;
+  margin: -20vh 0 10vh 20vw;
+  color: #f0ffff;
 }
 
-.profissional p {
-  font-family: "Source Sans 3";
-  font-weight: bold;
-  font-size: 42px;
-  width: 211px;
-  height: 57px;
-  margin-top: 30px;
+.section>h1 {
+  font-size: larger;
+  font-weight: 600;
 }
 
-/*IMAGEM PREDIOS*/
-.imagempredios {
-  width: 1078px;
-  height: 439.63px;
-  width: 100%;
-  margin-top: 200px;
-  background-image: url("../img/predioshome.svg");
+.section>p {
+  font-size: 28;
+
 }
+
 
 /*FOOTER*/
-* {
-  font-family: "Source Sans 3", sans-serif;
-  font-family: "Source Sans Pro", sans-serif;
-  margin: 0;
-}
-
 .footer.content {
   position: fixed;
   margin: 0;
   padding: 0;
+  padding: 0 0 0 0;
 }
 
 .footer-container>footer {
   display: flex;
-  background-color: #70cbcb;
-  height: 300px;
+  background-color: #6d89ed;
+  height: 380px;
 }
 
 #minimal-logo {
-  padding: 30px 50px 10px 10px;
-  height: 110px;
+  padding: 30px 30px 10px 10px;
 }
 
 #Nossos-contatos {
   text-align: right;
-  font-size: 28px;
+  font-size: 18px;
   font-weight: 600;
   color: #f0ffff;
 }
 
 .footer-contacts-info {
-  padding: 100px 20px 0px 0px;
+  padding: 100px 20px 0px 20px;
 }
 
 .footer-contacts-info>img {
@@ -488,31 +475,30 @@ li {
 }
 
 .footer-contacts-info>label {
-  font-size: 20px;
+  font-size: 14px;
   color: #f0ffff;
-  text-shadow: none;
 }
 
 .footer-social-a-icons {
-  padding: 50px 10px 0px 90px;
-  flex-wrap: nowrap;
+  padding: 50px 10px 0px 10px;
 }
 
 .footer-social-a-icons img {
-  width: 80px;
-  padding: 10px 10px 0px 20px;
+  width: 50px;
+  padding: 10px 20px 0px 0px;
 }
 
 #footer-end-line {
   width: 100%;
-  height: 60px;
-  background-color: #70cbcb;
-  border-top: solid 3px #f0ffff;
+  background-color: #6d89ed;
+  height: 8vh;
   text-align: center;
   color: #f0ffff;
   font-size: 22px;
   font-weight: 600;
 }
+
+
 
 #footer-end-line a {
   text-decoration: none;
