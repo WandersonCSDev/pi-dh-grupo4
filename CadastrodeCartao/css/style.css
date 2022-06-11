@@ -239,8 +239,9 @@ body {
     color: #f0ffff;
     font-weight: bold;
     font-size: 30px;
-    margin-left: 200px;
-    margin-top: 180px;
+    margin-left: 360px;
+    margin-top: 20px;
+    margin-bottom: 100px;
     cursor: pointer;
     background-color: #6d89ed;
     text-shadow: 2px 3px 3px black;
