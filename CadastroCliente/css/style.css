@@ -3,314 +3,250 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Source+Sans+3:wght@400;600;700&display=swap");
 
 * {
-  margin: 0;
-  padding: 0;
-  font-family: "Source Sans 3", sans-serif;
-  font-family: "Source Sans Pro", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 /*ESTILOS GERAIS*/
 body {
-  background: #f4decd;
+    font-family: "Source Sans Pro", "Source Sans 3";
+    background-image: url(../img/job405-ploy-01c.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /*HEADER*/
 .header-container {
-  height: 270px;
-  margin: 0 0 0 0;
+    height: 380px;
+    margin: 0 0 0 0;
+    background-image: url(../img/background-neon.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.header-container>header {
-  position: relative;
-  display: flex;
-  width: 100%;
-  height: 100%;
-  margin: 0px;
-  background-color: #70cbcb;
+.header-container > header {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
 }
 
 .header-img-logo {
-  position: relative;
-  width: 200px;
-  top: 40px;
-  left: 10px;
+    position: relative;
+    width: 200px;
+    height: 50px;
+    top: 14vh;
+    left: 11vw;
 }
 
 .header-nav-bar {
-  position: relative;
-  padding: 180px 40px 60px;
-  font-size: 20px;
-  margin-left: 100px;
-  margin-top: 40px;
+    position: relative;
+    padding: 46vh 0vw 0vw;
+    font-size: 20px;
+    margin-left: -8vw;
+    margin-right: 12vw;
 }
 
-.header-nav-bar {
-  justify-content: space-around;
+.header-nav-bar a {
+    color: #f0ffff;
+    text-decoration: none;
+    font-size: larger;
+    text-shadow: 1px 2px 3px #cdcef4;
+    padding: 0px 5vw 0px;
 }
 
-.header-nav-bar>nav>a {
-  color: #f0ffff;
-  text-decoration: none;
-  font-size: larger;
-  text-shadow: 5px 5px 5px black;
-  padding: 0px 20px 20px;
+.header-left-itens-login {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5vw;
+    justify-content: center;
 }
 
 #header-myItens {
-  padding: 50px 40px 40px 0px;
+    position: relative;
+    align-items: center;
 }
 
-#header-myItens>img {
-  width: 50px;
-  margin-left: 30px;
-  margin-top: 118px;
+#header-myItens > img {
+    width: 50px;
+    margin: 12vh 0 0 2vw;
 }
 
-#header-myItens>a {
-  color: #f0ffff;
-  font-size: 22px;
-  text-align: left;
-  margin-left: 10px;
-  text-shadow: 5px 5px 5px black;
-  text-decoration: none;
+#header-myItens > a {
+    color: #f0ffff;
+    font-size: 22px;
+    text-align: left;
+    padding: 0 0 0 0;
+    margin: 10vh 0 0 0;
+    text-shadow: 1px 2px 3px #eccef4;
+    text-decoration: none;
 }
 
 #header-login {
-  padding: 50px 30px 0px;
+    padding: 0vh 0vw 0vw;
 }
 
-#header-login>img {
-  width: 40px;
-  margin: 125px 0 0 30px;
+#header-login > img {
+    width: 40px;
+    margin: 14vh 0 0 2vw;
 }
 
-#header-login>a {
-  color: #f0ffff;
-  font-size: 22px;
-  margin-left: 22px;
-  text-decoration: none;
-  text-shadow: 5px 5px 5px black;
+#header-login > a {
+    color: #f0ffff;
+    font-size: 22px;
+    margin: 38vh 0 0 1.5vw;
+    text-decoration: none;
+    text-shadow: 1px 2px 3px #eccef4;
 }
 
 /*CADASTRO*/
 
 main {
-  margin: 5% 0 5% 0;
+    margin: 5% 0 5% 11%;
 }
 
 main h1 {
-  text-align: center;
-  background-color: #70cbcb;
-  width: 40%;
-  color: #f0ffff;
-  text-shadow: 3px 3px 5px black;
-  border-radius: 10px;
+    text-align: center;
+    background-color: #6d89ed;
+    width: 40%;
+    color: #f0ffff;
+    text-shadow: 3px 3px 5px black;
+    border-radius: 10px;
 }
 
 .form-cadastro-option {
-  margin: 3% 15% 0% 15%;
+    margin: 3% 15% 0% 15%;
+    color: #f0ffff;
 }
 
 .radio-inline {
-  padding-right: 40px;
+    padding-right: 40px;
 }
 
 .cad-cliente-forms {
-  margin: 0 10% 0 10%;
-  background-color: #70cbcb;
-  width: 63%;
-  border-radius: 10px;
+    margin: 0 10% 0 10%;
+    background-color: #6d89ed;
+    width: 63%;
+    border-radius: 10px;
 }
 
 table {
-  margin: 5%;
-  color: #f0ffff;
-  text-shadow: 1px 2px 3px black;
+    margin: 5%;
+    color: #f0ffff;
+    text-shadow: 1px 2px 3px black;
 }
 
 td {
-  padding: 3px;
+    padding: 3px;
 }
 
 input {
-  font-size: 14px;
-  border: none;
-  border-radius: 3px;
+    font-size: 14px;
+    border: none;
+    border-radius: 3px;
 }
 
 .cadastro-PF-buttons button {
-  width: 100px;
-  height: 25px;
-  background-color: #70cbcb;
-  border: none;
-  box-shadow: 3px 3px 5px #000000;
-  text-shadow: ;
-  font-size: larger;
-  color: #f0ffff;
+    width: 100px;
+    height: 25px;
+    background-color: #6d89ed;
+    border: none;
+    box-shadow: 3px 3px 5px #000000;
+    cursor: pointer;
+    font-size: larger;
+    color: #f0ffff;
 }
 
 .cadastro-PJ-buttons button {
-  width: 100px;
-  height: 25px;
-  background-color: #70cbcb;
-  border: none;
-  box-shadow: 3px 3px 5px #000000;
-  text-shadow: ;
-  font-size: larger;
-  color: #f0ffff;
+    width: 100px;
+    height: 25px;
+    background-color: #6d89ed;
+    border: none;
+    box-shadow: 3px 3px 5px #000000;
+    cursor: pointer;
+    font-size: larger;
+    color: #f0ffff;
 }
 
 .cadastro-PJ-buttons {
-  text-align: center;
+    text-align: center;
 }
 
 .cadastro-PF-buttons {
-  text-align: center;
+    text-align: center;
 }
 
 select {
-  font-size: 14px;
-  border: none;
-  border-radius: 3px;
+    font-size: 14px;
+    border: none;
+    border-radius: 3px;
 }
 
 /*FOOTER*/
 .footer.content {
-  margin: 0;
-  padding: 0;
+    position: fixed;
+    margin: 0;
+
+    padding: 0;
+
+    padding: 0 0 0 0;
 }
 
-.footer-container>footer {
-  display: flexbox;
-  background-color: #70cbcb;
-  height: 380px;
-}
-
-.footer-logo-div {
-  margin: 0;
-}
-
-#minimal-logo {
-  padding: 30px 50px 10px 30px;
-  height: 100px;
-}
-
-#Nossos-contatos {
-  text-align: right;
-  font-size: 28px;
-  font-weight: 600;
-  color: #f0ffff;
-}
-
-.footer-contacts-info {
-  padding: 100px 20px 0px 0px;
-}
-
-.footer-contacts-info>img {
-  width: 40px;
-  padding: 15px 20px 0px 0px;
-}
-
-.footer-contacts-info>label {
-  font-size: 20px;
-  color: #f0ffff;
-  text-shadow: none;
-}
-
-.footer-social-a-icons {
-  padding: 50px 10px 0px 90px;
-  flex-wrap: nowrap;
-}
-
-.footer-social-a-icons img {
-  width: 150px;
-  padding: 10px 20px 0px 0px;
-}
-
-#footer-end-line {
-  width: 100%;
-  height: 60px;
-  background-color: #70cbcb;
-  border-top: solid 3px #f0ffff;
-  text-align: center;
-  color: #f0ffff;
-  font-size: 22px;
-  font-weight: 600;
-}
-
-#footer-end-line a {
-  text-decoration: none;
-}
-
-:hover#footer-end-line a {
-  text-decoration: none;
-  color: #ffffff;
-}
-
-.footer.content {
-  position: fixed;
-  margin: 0;
-  padding: 0;
-}
-
-.footer-container>footer {
-  display: flex;
-  background-color: #70cbcb;
-  height: 380px;
+.footer-container > footer {
+    display: flex;
+    background-color: #6d89ed;
+    height: 380px;
 }
 
 #minimal-logo {
-  padding: 30px 50px 10px 20px;
-  height: 100px;
+    padding: 30px 30px 10px 10px;
+    height: 80px;
 }
 
 #Nossos-contatos {
-  text-align: right;
-  font-size: 28px;
-  font-weight: 600;
-  color: #f0ffff;
+    text-align: right;
+    font-size: 32px;
+    font-weight: 600;
+    color: #f0ffff;
 }
 
 .footer-contacts-info {
-  padding: 100px 20px 0px 0px;
+    padding: 100px 20px 0px 20px;
 }
 
-.footer-contacts-info>img {
-  width: 40px;
-  padding: 15px 20px 0px 0px;
+.footer-contacts-info > img {
+    width: 30px;
+    padding: 15px 20px 0px 0px;
 }
 
-.footer-contacts-info>label {
-  font-size: 20px;
-  color: #f0ffff;
-  text-shadow: none;
+.footer-contacts-info > label {
+    font-size: 28px;
+    color: #f0ffff;
 }
 
 .footer-social-a-icons {
-  padding: 50px 10px 0px 90px;
+    padding: 50px 10px 0px 10px;
 }
 
 .footer-social-a-icons img {
-  width: 50px;
-  padding: 10px 20px 0px 0px;
+    width: 40px;
+    padding: 10px 20px 0px 0px;
 }
 
 #footer-end-line {
-  width: 100%;
-  height: 60px;
-  background-color: #70cbcb;
-  border-top: solid 3px #f0ffff;
-  text-align: center;
-  color: #f0ffff;
-  font-size: 22px;
-  font-weight: 600;
-}
-
-#footer-end-line a {
-  text-decoration: none;
-}
-
-:hover#footer-end-line a {
-  text-decoration: none;
-  color: #ffffff;
+    width: 100%;
+    height: 60px;
+    background-color: #6d89ed;
+    border-top: solid 3px #f0ffff;
+    border-top: #f0ffff;
+    border-top-width: 2px;
+    width: 100%;
+    height: 30px;
+    background-color: #6d89ed;
+    text-align: center;
+    color: #f0ffff;
+    font-size: 22px;
+    font-weight: 600;
 }
