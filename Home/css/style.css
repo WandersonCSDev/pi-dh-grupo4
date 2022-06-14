@@ -133,6 +133,14 @@ body {
   padding-top: 5px;
 }
 
+#watermark {
+  position: absolute;
+  margin: 350px 0 0 150px;
+  width: 350px;
+  opacity: 30%;
+  z-index: 10;
+}
+
 .carousel>ol,
 li {
   list-style: none;
@@ -147,6 +155,7 @@ li {
   padding-top: 50%;
   filter: drop-shadow(0 0 10px #0003);
   perspective: 400px;
+
 }
 
 .carousel__viewport {
@@ -159,6 +168,7 @@ li {
   overflow-x: scroll;
   scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
+
 }
 
 .carousel__slide {
@@ -172,9 +182,11 @@ li {
   align-items: center;
   display: flexbox;
   width: 80%;
+  height: 480px;
   margin-left: auto;
   margin-right: auto;
 }
+
 
 .carousel__slide:nth-child(even) {
   background-color: transparent;
