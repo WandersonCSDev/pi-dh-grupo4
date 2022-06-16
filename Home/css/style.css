@@ -545,3 +545,12 @@ li {
   text-decoration: none;
   color: #f0ffff;
 }
+
+@media (min-width: 768px) {
+  .header-nav-bar {
+    position: relative;
+    padding: 40vh 0vw 0vw;
+    margin-left: -10vw;
+    margin-right: 8vw;
+  }
+}
