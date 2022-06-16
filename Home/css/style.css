@@ -508,7 +508,7 @@ li {
   font-weight: 500;
   text-decoration: none;
   color: #f0ffff;
-  margin: 14vh 10vw;
+  margin: 14vh 7vw;
 
 }
 
@@ -543,5 +543,5 @@ li {
 
 :hover#footer-end-line a {
   text-decoration: none;
-  color: #ffffff;
+  color: #f0ffff;
 }
