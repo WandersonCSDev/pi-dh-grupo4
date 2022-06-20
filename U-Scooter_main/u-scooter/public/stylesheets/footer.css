@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@600;700;900&family=Source+Sans+Pro:wght@400;600;700&display=swap");
+
+.footer.content {
+    position: fixed;
+    margin: 0;
+
+    padding: 0;
+
+    padding: 0 0 0 0;
+}
+
+.footer-container > footer {
+    display: flex;
+    background-color: #6d89ed;
+    height: 380px;
+}
+
+#minimal-logo {
+    padding: 30px 30px 10px 10px;
+    height: 80px;
+}
+
+#Nossos-contatos {
+    text-align: right;
+    font-size: 32px;
+    font-weight: 600;
+    color: #f0ffff;
+}
+
+.footer-contacts-info {
+    padding: 100px 20px 0px 20px;
+}
+
+.footer-contacts-info > img {
+    width: 30px;
+    padding: 15px 20px 0px 0px;
+}
+
+.footer-contacts-info > label {
+    font-size: 28px;
+    color: #f0ffff;
+}
+
+.footer-social-a-icons {
+    padding: 50px 10px 0px 10px;
+}
+
+.footer-social-a-icons img {
+    width: 40px;
+    padding: 10px 20px 0px 0px;
+}
+
+#footer-end-line {
+    width: 100%;
+    height: 60px;
+    background-color: #6d89ed;
+    border-top: solid 3px #f0ffff;
+    border-top: #f0ffff;
+    border-top-width: 1px;
+    width: 100%;
+    height: 30px;
+    background-color: #6d89ed;
+    text-align: center;
+    color: #f0ffff;
+    font-size: 22px;
+    font-weight: 600;
+}
