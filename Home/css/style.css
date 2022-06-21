@@ -55,6 +55,78 @@ body {
 }
 
 
+
+.wrapper {
+  display: none;
+}
+
+/*Menu Hamburguer*/
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkbox {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  top: 50px;
+  right: 60px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  transition: 400ms ease-in-out 0.1s;
+}
+
+.checkbox .trace {
+  width: 60px;
+  height: 8px;
+  background-color: #f0ffff;
+  position: absolute;
+  border-radius: 4px;
+  transition: 0.5s ease-in-out;
+}
+
+.checkbox .trace:nth-child(1) {
+  top: 26px;
+  transform: rotate(0);
+}
+
+.checkbox .trace:nth-child(2) {
+  top: 46px;
+  transform: rotate(0);
+}
+
+.checkbox .trace:nth-child(3) {
+  top: 66px;
+  transform: rotate(0);
+}
+
+#toggle {
+  display: none;
+
+}
+
+#toggle:checked+.checkbox .trace:nth-child(1) {
+  transform: rotate(45deg);
+  top: 47px;
+}
+
+#toggle:checked+.checkbox .trace:nth-child(2) {
+  transform: translateX(-100px);
+  width: 20px;
+  visibility: hidden;
+  opacity: 0;
+}
+
+#toggle:checked+.checkbox .trace:nth-child(3) {
+  transform: rotate(-45deg);
+  top: 48px;
+}
+
 .header-nav-bar a {
   color: #f0ffff;
   text-decoration: none;
@@ -423,7 +495,7 @@ li {
   }
 }
 
-/*TEXTO CONHEÇA NOSSOS PLANOS*/
+/*TEXTO */
 
 .home-titulo-planos {
   width: 100%;
@@ -491,11 +563,8 @@ li {
   color: #f0ffff;
 }
 
-.footer-social-a-icons {
-  padding: 50px 10px 0px 10px;
-}
-
 .footer-social-a-icons img {
+  display: flex;
   width: 60px;
   padding: 10px 20px 0px 0px;
 }
@@ -508,7 +577,7 @@ li {
   font-weight: 500;
   text-decoration: none;
   color: #f0ffff;
-  margin: 14vh 7vw;
+  margin: 12vh 7vw;
 
 }
 
@@ -546,11 +615,199 @@ li {
   color: #f0ffff;
 }
 
+
+
+/*Header*/
 @media (min-width: 768px) {
+
+  .header-img-logo img {
+    width: 400px;
+  }
+
+
   .header-nav-bar {
     position: relative;
     padding: 40vh 0vw 0vw;
-    margin-left: -10vw;
+    margin-left: -8vw;
     margin-right: 8vw;
+  }
+
+  #header-myItens {
+    position: relative;
+    align-items: center;
+  }
+
+  #header-myItens>img {
+    width: 50px;
+    margin: 12vh 0 0 5vw;
+  }
+
+  #header-myItens>a {
+    color: #f0ffff;
+    font-size: 22px;
+    text-align: left;
+    padding: 0 0 0 0;
+    margin: 10vh 0 0 3.5vw;
+    text-shadow: 1px 2px 3px #eccef4;
+    text-decoration: none;
+  }
+
+  #header-login {
+    padding: 0vh 0vw 0vw;
+  }
+
+  #header-login>img {
+    width: 40px;
+    margin: 14vh 0 0 5.5vw;
+  }
+
+  #header-login>a {
+    color: #f0ffff;
+    font-size: 22px;
+    margin: 38vh 0 0 4.8vw;
+    text-decoration: none;
+    text-shadow: 1px 2px 3px #eccef4;
+  }
+
+}
+
+
+
+/*Footer*/
+@media (min-width: 768px) {
+  .footer-social-a-icons {
+    display: flex;
+    flex-direction: row;
+    margin-left: 40px;
+  }
+
+  .footer-social-a-icons img {
+    width: 60px;
+    margin: 40px 0 0;
+  }
+
+
+
+  .footer-site-map {
+    margin: 13vh 5vw;
+  }
+}
+
+/*Header*/
+@media (min-width: 460px) {
+
+  .header-img-logo img {
+    width: 250px;
+  }
+
+  .wrapper {
+    visibility: visible;
+  }
+
+  .header-nav-bar {
+    display: none;
+  }
+
+  .header-left-items-login {
+    display: none;
+  }
+
+  .menu {
+    position: absolute;
+    top: 28px;
+    right: 30px;
+    background: transparent;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px 0px #f0ffff;
+    z-index: -1;
+    transition: 400ms ease-in-out 0.1s;
+  }
+
+  .header-menu-items {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden;
+    transition: 400ms ease-in-out 0s;
+  }
+
+  .header-menu-items a {
+    margin: 10px 0;
+    color: #121625;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 40px;
+  }
+
+  .menu-items a:hover {
+    border-radius: 10px;
+  }
+
+  /*ANIMAÇÃO DO MENU*/
+
+  /*TO DO
+  TERMINAR A ANIMAÇÃO DO MENU (HEADER)
+  */
+
+  #toggle:checked+.checkbox .trace:nth-child(1) {
+    transform: rotate(45deg);
+    background-color: #1c43c5;
+    top: 47px;
+  }
+
+  #toggle:checked+.checkbox .trace:nth-child(2) {
+    transform: translate(-50px);
+    width: 30px;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  #toggle:checked+.checkbox .trace:nth-child(3) {
+    transform: rotate(-45deg);
+    background-color: #1c43c5;
+    top: 48px;
+  }
+
+  #toggle:checked+.checkbox {
+    background-color: #f0f0;
+  }
+
+  #toggle:checked~.menu {
+    box-shadow: 0px 0px 0px 60vmax #7207ca;
+    z-index: 10;
+  }
+
+  #toggle:checked~.menu-items {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+
+/*Footer*/
+@media (min-width: 460px) {
+  .footer-social-a-icons {
+    display: flex;
+    flex-direction: row;
+    margin-left: 40px;
+  }
+
+  .footer-social-a-icons img {
+    width: 60px;
+    margin: 40px 0 0;
+  }
+
+  .footer-site-map {
+    margin: 13vh 5vw;
   }
 }
