@@ -299,13 +299,7 @@ body {
     pointer-events: none;
   }
 
-  .carousel::before {
-    background-image: url("../img/arrowLeft.svg");
-  }
 
-  .carousel::after {
-    background-image: url("../img/arrowRight.svg");
-  }
 
   @media (max-width: 359px) {
     .titulo h1 {
